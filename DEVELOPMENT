@@ -1,0 +1,88 @@
+17th September 2016
+
+Hedonism Quest, Wilda's Ascension (HQWA) started as a project on Thursday 18th August 2016.
+
+While the intention wasn't to publish the first cut of the game in under a month, I (barely) achieved that.
+
+There was another project between Xyla's Little Elven Adventure (XLEA), and HQWA. However, after 2 months I abandoned it, as it was too complex.
+
+When I started over on HQWA, I considered another 2 concepts (and worked on them for 2-3 days each) before dropping those, and starting over on HQWA. Those other two concepts had the same tag line "Have you considered Hedonism?". Hedonism Quest, was all about delivering that one line (multiple times), and building the story around it.
+
+Sticking "Wilda's Ascension" onto the end of the name was to form a unique 4 letter acronym, that isn't widely used. This was done only for the 3rd concept (which turned into HQWA).
+
+HQWA borrowed code heavily from XLEA. For a period of time the developed program was carrying around XLEA's savefile code and game logic until I could build the HQWA versions up enough that I could strip out the XLEA specific code.
+
+As far as the user interface is concerned, I did not have a reason to replace it. Both XLEA and HQWA separate the user interface from the game logic. It is possible to replace the user interface with something else that works with previous dialog, current dialog and a selection actions list, such as a server based web page somewhere. That would mean hosting, being DDOS attacked, etc... I will reconsider that sometime later.
+
+For my selection of CURSES, it isn't going away anytime soon, and is relatively stable for APIs. I program in C, because that is what I am used to. I could mention JavaScript, then watch and argument boil over between other people. I am going to stick to what I know.
+
+
+I seem to do better with games where the background storyline is completely non-existent (and the characters have no visible backstory). It allows me to be slightly more fluid when writing, and not get bogged down with the potential that the resultant logic is going to be enormous.
+
+The encounter and navigation dialog construction was the last thing that I did. Believe me, it started to get boring around that point. Thankfully it wasn't too complex that I was able to complete and not abandon the project.
+
+The storyline in HQWA is simpler (it is a single line linear progression), as opposed to XLEA that had heavy branching of a single storyline, which turned into a problem to maintain continuity. It took me well over a week to write the base storyline for XLEA, and it was constant QC-hell after that. HQWA's storyline was completed in half the time, with a lot less mess afterwards.
+
+However, HQWA is more of a game than XLEA is. The reason for that is the dungeon navigation that is present in the map data, a stats system, and something that resembles an encounter/combat system. Instead of making the variance in the storyline (which is how I did it with XLEA), with HQWA the variance was with the environment. There are three map sets that have common elements, but otherwise are different maps. I did not develop the second and third mapsets straight away, I waited till after the game was up and running with mapset 1, before spending 3 days doing the other 2.
+
+The first question (with Amber) selects the map set. It is for this reason that I pinned (easy), (medium) and (hard) onto the end of those selections.
+
+One early hurdle that I had to overcome with HQWA was the way that the savefile structure works. With XLEA, it was simple to save a limited amount of information, and to reconstruct the scene, I just had to restore the variables leading into it (pre-process save). For XLEA this meant that to get the current dialog back, it was only necessary to input the variables and re-reun the scene to generate that dialog. It seemed like a good idea at the time, but the result wasn't the best.
+
+HWQA approached save files from the other direction, saving the results of the last action, rather than the last action settings (post-process save). What is saved is the current dialog (along with the previous dialog, for "dim-scroll-back"), and the action entries (along with all of the other variables). This was necessary, because replaying an action where an RNG is a contributing factor can be the difference between you restoring losing or winning.
+
+The navigation solution and event system with HQWA is based upon a nav solutions that I wrote for previous game projects (but never published/completed). It is a simple 4-direction linkage, where it is possible to track the previous use of the location and the links. The idea of adding events at each location was tacked on. In hindsight, the handling of "limited direction" processing could have been done better. Rather than re-factor the code and data (and there would have been a lot), I decided to just leave it as it is. Note-to-self: Do it better next time.
+
+Part of the "randomness" of the environment is a RNG to define what descriptions to give to every location and link. Those values are in the save file, and are generated when the map is loaded, this way things look slightly different on subsequent replays.
+
+The inventory system is basic. Very basic. It is an example of something that is just enough to do the job (in this case), but otherwise I would not do it this way anymore. Anyway, these are the things that you learn. I could have gone completely over the top, however, I decided that I would be spending 2 months to build an inventory system that I would probably never use.
+
+The stat system (which is partially related to inventory) worked out well. The way it works does not mean that it is any easier to tune (and that was a problem for a while). Unlike a lot of RPGs, there is no concept of levels or experience to increase a level, instead when actions are performed stats are directly altered. This is why I worked with whole numbers and fractions (up to 3 decimal places). With an equipped item, when you use it, it depreciates. Swing a sword, and it is damaged. Take a hit and your amour is slightly damaged and less effective. Walk somewhere, your stamina decreases. Perform a combat move, stamina decreases, but endurance slightly increases. Depending upon the move, reflexes are altered. Not keeping lust in check results in less effective moves, etc.
+
+I don't think I got the stat system right, however, there is room for improvement. Either way.. "look, lots of numbers that change when stuff happens"..
+
+When constructing the list of stats, I tried to make sure that each one has a unique starting letter.
+
+Here is the full list of stats:
+Endurance (Maximum HP)
+Stamina (Current HP)
+Might (Strength)
+Karma (Luck/Fate)
+Frigidity (Maximum Lust)
+Lust (Arousal)
+Reflexes (Combat Experience)
+Oral experience
+Vaginal experience
+Anal experience
+Weapon effectiveness
+Glove (Gauntlet) effectiveness
+Boots (Shoes) effectiveness
+Clothing (Armor) effectiveness
+
+The last 4 are the effectiveness values for what is currently in the clothing slots.
+
+The monsters I made rather timid (except the first one, which is outright suicidal). Some will runaway immediately, others will have a little bit of a fight, then their "fear" parameters are too high, and they will run away.
+
+I changed the way that encounters work. With XLEA, I went too descriptive. With HQWA, I used "Fade to Black" (FtB) a lot...
+
+[X period of time later...]
+
+... instead of getting into excruciating detail about what the X was doing, what the Y was also doing, possibly at the same time, but for half as long.. and how Z was being reamed by A.. what force is being applied, etc. Nice idea, but when you are approaching a sex scene with military precision, it takes some of the fun out of it.
+
+Unfortunately, there is still elements of grinding (map navigation, mostly). To help, I ended up screen capping redacted versions of the maps to be published at the same time as the game, so that people who aren't used to navigating maps with words alone, have something visual to refer to.
+
+The plan for a while is to work on fixes (although I did a reasonable logic check with multiple play-tests), grammar fixes (because I suck when it comes to writing stuff that reads right the first time, and it takes a while for me to find all of the mistakes). However, the game is essentially finished now.
+
+
+I would not mind collaborating with some other people for my next /d/-themed game. Given the fact that I have delivered 2 now, should indicate that I am sort of reliable. It is a shame that some of the active posters on /dgg/ are utter assholes. There are people who go out of their way to scare/peeve off /d/evs, probably so they can feel that they have done a duty, or accomplished something important (in their own minds at least).
+
+Despite the above, my best feedback about problems for XLEA was from /dgg/ posters.
+
+One thing that I have left open with HQWA, is the potential for other storylines in the same world. If someone else wants to have a shot at writing a HQ storyline, I have no problems with it (the fact that I am using the "CC BY 4.0" license allows for that).
+
+When working on HQWA, I did consider some ideas about how to make the maps a lot more random. The downside of that is that it would be impossible for me to construct a image of a map and publish it for the casual players to follow. One of the things that people might notice about VNs is that they are specifically simple gamewise, so that people who want to play one-handed can do so. /d/-themed games do not have to be complex. The more complex they are, the less appealing they are.
+
+
+M100
+17th September 2016
+
