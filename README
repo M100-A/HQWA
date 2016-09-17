@@ -1,0 +1,99 @@
+Hedonism Quest, Wilda's Ascension (HQWA) - Game
+
+Type: Text Adventure/Interactive Fiction
+Version: 0.60 (Saturday 17th September 2016)
+Platforms: Linux (command line) and Windows, using the CURSES API
+Original Author: M100 (M100-A)
+Synopsis: A mercenary swordswoman accepts a well paying job, from a nun, to recover a relic from a temple that has been destroyed by monsters. Wilda accepts the job, despite the fact that employer's idea of praying involves masturbating in public.
+
+
+# Usage (run) instructions:
+
+On Linux:
+First you need to compile the program (see below).
+Once the program is compiled, run the program from a command line (xterm or SSH session).
+
+Note: There is no Linux binary distributed, so you will need to compile the source code.
+Note2: I have found "differences" between various Linux distributions in relation to linkage to shared library (.so) files that cause programs to not necessarily be as cross compatible. I am not taking my chances, so I am just supplying the source code.
+
+
+On Windows:
+Run the program from either a command line or click on the program.
+Note: a Windows binary is available.
+
+
+# System requirements:
+
+On Linux:
+gcc compiler
+make
+curses library
+m library (math library, for floorf and roundf)
+
+Note: you may need to load packages for your Linux distribution for any of the above.
+
+
+On Windows: (if you want to compile the code)
+a C compiler (Microsoft Visual C++ will do, or you could download CodeBlocks)
+Win32a PDCurses (http://www.projectpluto.com/win32a.htm)
+
+Note: I supply the binary for Windows, which should work, so you should not require a compiler or the PDcurses library.
+
+
+# Compile instructions:
+
+On Linux:
+Unpack the files in a directory, navigate to that directory.
+Use the "make" command to create the program.
+"HQWA" will be created in the directory.
+
+On Windows:
+First, create the PDcurses-Win32a library (consult your favourite search engine about how to do this with your compiler of choice).
+Then create a project and import the HQWA source code.
+You will want to start with an empty project.
+You will need to amend the project configuration to reference the PDcurses-Win32a header file directory for your include files.
+You will need to amend the project configuration to reference the PDcurses-Win32a library file directory for your library files.
+You will also need to include the PDcurses-Win32a library (panel.lib) in the libraries to be built.
+Then start building the program.
+It should be noted that the compiler is likely to have a problem with the depreciated string utilities that XELA uses.
+
+
+# Usage (play) instructions:
+
+There is a "help" screen available from the main menu in the program. Here is shortened overview.
+
+You can Ctrl-C or Ctrl-Q out of the program (which does not save anything).
+
+You can access the "Save Screen" while playing the game with Ctrl-S. To load a previous save, go to the main menu and select the "Load previous game" option.
+
+To start a new game, select the "Start new game" option.
+
+You can go back to the main menu (without saving anything) with Ctrl-U.
+
+When you are presented with text that can "scroll", there will be an inverted <more> in the lower right corner of the window.
+
+You can scroll up and down with the up and down arrow keys (single line) or the page up/down keys (entire page).
+
+When you have reached the end of the scrollable text, you will see a command prompt:
+>
+..and the cursor will be next to it.
+
+Below it will be a status line showing the number of commands available to you. To find out what those are, you can just press the "tab" key, and the program will allow you to scroll through the commands using the arrow keys. You can get out of the "tab" selection mode by pressing "tab" again.
+
+You can also shortcut a command by partially typing it. Once the command is unique, the program will auto-complete the command in the status line below the command entry.
+
+To select/confirm a command press the "enter" key.
+
+
+# Command line switches:
+
+HQWA has 3 optional command line switches.
+
+-t changes to default the entry mode to Arrow-selection (instead of Direct-input).
+Using this switch means that if the user exclusively uses Arrow-selection mode all of the time, they don't have to press tab (or down arrow) to enter it. This saves the player (you) from pressing one key to enter the mode. Some people use this to play the game with a single hand, with just the Page Up, Page Down, Home, End, Enter and Arrow Keys in the list selection mode at all times.
+
+-D turns on debug output. During the game the program will show some of its underlying logic about the map, encounter conditions and encounter action results.
+
+-L turns on a log output. A file called HQWA-Log.txt will be created in the current working directory and written to as the program runs. This is useful for windows users who want to get to the text to highlight mistakes or errors, as PDCurses does not allow for cut and paste of text.
+
+
