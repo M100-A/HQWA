@@ -19,7 +19,7 @@ extern char    *gpszArchiveBuffer;
 extern int     giArchiveBufferUsed;
 
 // storage of the file load structure..
-struct	futils_filebuff         gstruct_FileBuff;
+struct	futils_filebuff         gstruct_FileBuffGen;
 
 // this is the debug output flag
 char    gcDebugFlag = 0;
@@ -177,22 +177,22 @@ int main (int argc, char **argv)
     }
 
     // set the flag to say that the buffered file memory is not initialized yet.
-    gstruct_FileBuff.bMemFlag = FALSE;
+    gstruct_FileBuffGen.bMemFlag = FALSE;
     // If this is NOT done, then horrible game crashing things can happen with
     //   futils_preAllocateBuffer() and futils_loadFileIntoMemory()
 
     //
-    // In the middle of the startup init, I am going to force allocate gstruct_FileBuff
+    // In the middle of the startup init, I am going to force allocate gstruct_FileBuffGen
     //
     // I know for a fact that the memory allocation will not normally exceed 100Kilobytes.
     // The ENTIRE main dialog (with comments) is only 75Kilobytes (it won't all be shown
     //   at the same time), and the archive buffer is limited to 64Kilobytes.
     //
     // So, for the purposes of working with the save files of a limited size, I am going
-    //   to bulk init the memory storage for gstruct_FileBuff now. This saves potential
+    //   to bulk init the memory storage for gstruct_FileBuffGen now. This saves potential
     //   realloc() calls and overhead later.
     //
-    iRet = futils_preAllocateBuffer ((unsigned long)122880, &gstruct_FileBuff);
+    iRet = futils_preAllocateBuffer ((unsigned long)122880, &gstruct_FileBuffGen);
 
     if (iRet != 0)
     {
@@ -287,6 +287,9 @@ int main (int argc, char **argv)
     // allows the use of the scrl() function..
     scrollok (stdscr, TRUE);
 
+    // initialize the static part of the search/replace system..
+    mdialog_initStaticList ();
+
     mutils_addToDialogBuffer ("Starting...\n");
 
     // check the map data (this puts information into the scroll back buffer)
@@ -324,7 +327,7 @@ int main (int argc, char **argv)
     }
 
 #ifdef __PDCURSES__
-    PDC_set_title( "Hedonism Quest, Wilda's Ascension v0.60");
+    PDC_set_title( "Hedonism Quest, Wilda's Ascension v0.70");
 #endif
 
     // this is the main while loop..
@@ -343,7 +346,9 @@ int main (int argc, char **argv)
         //
         if ((iSceneId == 5) && (iSubSceneId > -1) && (iSubSceneId < 9))
         {
-            iRet = savescreen_loadSaveFile (iSubSceneId + 1);
+            sprintf (szWorkString, "save%d.txt", (int)(iSubSceneId + 1));
+
+            iRet = statefile_loadSaveFile (szWorkString);
 
             if (iRet)
             {
@@ -461,7 +466,7 @@ int main (int argc, char **argv)
         // I turned this into something that is activated by a command line switch.
         //
         if (cLogEnable != 0)
-            futils_writeFileHeaderAndData ("HQWA-Log.txt", "#HQWA v0.60 log output\n", gpszDialogBuffer);
+            futils_writeFileHeaderAndData ("HQWA-Log.txt", "#HQWA v0.70 log output\n", gpszDialogBuffer);
 
         for (iOffset = 0; iOffset < 399; iOffset++)
             szInputString[iOffset] = 0;

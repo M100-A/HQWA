@@ -1689,8 +1689,10 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
     short   sOffset2;
     short   sMapPosStaticCurrentSize;
     short   sLinkMax = 0;
+#ifdef INTERFACE_CURSES
     char    szBuffer[200];
     int     iRet;
+#endif
 
     sOffset1 = 0;
 
@@ -1705,18 +1707,22 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
 
         if (sOffset1 > 1000)
         {
+#ifdef INTERFACE_CURSES
             sprintf (szBuffer, "%s: Initial Scan PosId limit error.\n", pszMapName);
             iRet = mutils_addToDialogBuffer (szBuffer);
             if (iRet != 0) return iRet;
+#endif
             return 6;
         }
     }
 
     if (sOffset1 == 0)
     {
+#ifdef INTERFACE_CURSES
         sprintf (szBuffer, "%s: Empty list.\n", pszMapName);
         iRet = mutils_addToDialogBuffer (szBuffer);
         if (iRet != 0) return iRet;
+#endif
         return 6;
     }
 
@@ -1728,9 +1734,11 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
     {
         if (pstructMapDataStatic[sOffset1].sPosId != (sOffset1 + 1))
         {
+#ifdef INTERFACE_CURSES
             sprintf (szBuffer, "%s: Invalid offset for %d\n", pszMapName, pstructMapDataStatic[sOffset1].sPosId);
             iRet = mutils_addToDialogBuffer (szBuffer);
             if (iRet != 0) return iRet;
+#endif
             return 6;
         }
 
@@ -1761,9 +1769,11 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
 
     if (sLinkMax > 1000)
     {
+#ifdef INTERFACE_CURSES
         sprintf (szBuffer, "%s: Initial Scan LinkId limit error.\n", pszMapName);
         iRet = mutils_addToDialogBuffer (szBuffer);
         if (iRet != 0) return iRet;
+#endif
         return 6;
     }
 
@@ -1775,25 +1785,31 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
         {
             if (pstructMapDataStatic[sOffset1].sPosIdNorth == (sOffset1 + 1))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: North End-less Loop Join for %d\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if ((pstructMapDataStatic[sOffset1].sPosIdNorth > sMapPosStaticCurrentSize) || (pstructMapDataStatic[sOffset1].sPosIdNorth < 0))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: North Join out of bounds for %d\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if (pstructMapDataStatic[sOffset1].sLinkIdNorth == 0)
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: North Join %d missing LinkId\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
@@ -1801,17 +1817,21 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
 
             if (pstructMapDataStatic[sOffset2].sPosIdSouth != (sOffset1 + 1))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: %d(South) does not link back to %d(North)\n", pszMapName, (sOffset2 + 1), (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if (pstructMapDataStatic[sOffset2].sLinkIdSouth != pstructMapDataStatic[sOffset1].sLinkIdNorth)
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: %d(South) linkage does not match %d(North)\n", pszMapName, (sOffset2 + 1), (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
         }
@@ -1820,25 +1840,31 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
         {
             if (pstructMapDataStatic[sOffset1].sPosIdEast == (sOffset1 + 1))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: East End-less Loop Join for %d\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if ((pstructMapDataStatic[sOffset1].sPosIdEast > sMapPosStaticCurrentSize) || (pstructMapDataStatic[sOffset1].sPosIdEast < 0))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: East Join out of bounds for %d\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if (pstructMapDataStatic[sOffset1].sLinkIdEast == 0)
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: East Join %d missing LinkId\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
@@ -1846,17 +1872,21 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
 
             if (pstructMapDataStatic[sOffset2].sPosIdWest != (sOffset1 + 1))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: %d(West) does not link back to %d(East)\n", pszMapName, (sOffset2 + 1), (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if (pstructMapDataStatic[sOffset2].sLinkIdWest != pstructMapDataStatic[sOffset1].sLinkIdEast)
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: %d(West) linkage does not match %d(East)\n", pszMapName, (sOffset2 + 1), (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
         }
@@ -1865,25 +1895,31 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
         {
             if (pstructMapDataStatic[sOffset1].sPosIdSouth == (sOffset1 + 1))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: South End-less Loop Join for %d\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if ((pstructMapDataStatic[sOffset1].sPosIdSouth > sMapPosStaticCurrentSize) || (pstructMapDataStatic[sOffset1].sPosIdSouth < 0))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: South Join out of bounds for %d\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if (pstructMapDataStatic[sOffset1].sLinkIdSouth == 0)
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: South Join %d missing LinkId\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
@@ -1891,17 +1927,21 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
 
             if (pstructMapDataStatic[sOffset2].sPosIdNorth != (sOffset1 + 1))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: %d(North) does not link back to %d(South)\n", pszMapName, (sOffset2 + 1), (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if (pstructMapDataStatic[sOffset2].sLinkIdNorth != pstructMapDataStatic[sOffset1].sLinkIdSouth)
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: %d(North) linkage does not match %d(South)\n", pszMapName, (sOffset2 + 1), (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
         }
@@ -1910,25 +1950,31 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
         {
             if (pstructMapDataStatic[sOffset1].sPosIdWest == (sOffset1 + 1))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: West End-less Loop Join for %d\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if ((pstructMapDataStatic[sOffset1].sPosIdWest > sMapPosStaticCurrentSize) || (pstructMapDataStatic[sOffset1].sPosIdWest < 0))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: West Join out of bounds for %d\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if (pstructMapDataStatic[sOffset1].sLinkIdWest == 0)
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: West Join %d missing LinkId\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
@@ -1936,17 +1982,21 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
 
             if (pstructMapDataStatic[sOffset2].sPosIdEast != (sOffset1 + 1))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: %d(East) does not link back to %d(West)\n", pszMapName, (sOffset2 + 1), (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
 
             if (pstructMapDataStatic[sOffset2].sLinkIdEast != pstructMapDataStatic[sOffset1].sLinkIdWest)
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: %d(East) linkage does not match %d(West)\n", pszMapName, (sOffset2 + 1), (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
         }
@@ -1955,18 +2005,22 @@ int mapdata_verifyStaticMapData (struct mapdata_posdatastatic *pstructMapDataSta
         {
             if ((pstructMapDataStatic[sOffset1].sControlLinkId < 0) || (pstructMapDataStatic[sOffset1].sControlLinkId > sLinkMax))
             {
+#ifdef INTERFACE_CURSES
                 sprintf (szBuffer, "%s: %d control link is out of bounds\n", pszMapName, (sOffset1 + 1));
                 iRet = mutils_addToDialogBuffer (szBuffer);
                 if (iRet != 0) return iRet;
+#endif
                 return 6;
             }
         }
 
     }
 
+#ifdef INTERFACE_CURSES
     sprintf (szBuffer, "%s: %*d entries, %*d links, checks passed.\n", pszMapName, 3, sMapPosStaticCurrentSize, 3, sLinkMax);
     iRet = mutils_addToDialogBuffer (szBuffer);
     if (iRet != 0) return iRet;
+#endif
 
     return 0;
 }
@@ -2535,19 +2589,19 @@ int mapdata_printLinkVisitValue (short sVisitVal)
     switch (sVisitVal)
     {
     case 0: // north
-        iRet = mutils_addToDialogBuffer ("an unknown ");
+        iRet = mdialog_addToDialogWithSrchRep ("an unknown ");
         break;
 
     case 1: // east
-        iRet = mutils_addToDialogBuffer ("a once-used ");
+        iRet = mdialog_addToDialogWithSrchRep ("a once-used ");
         break;
 
     case 2: // south
-        iRet = mutils_addToDialogBuffer ("a familiar ");
+        iRet = mdialog_addToDialogWithSrchRep ("a familiar ");
         break;
 
     default: // case 3: west
-        iRet = mutils_addToDialogBuffer ("a well-traveled ");
+        iRet = mdialog_addToDialogWithSrchRep ("a well-traveled ");
         break;
     }
 

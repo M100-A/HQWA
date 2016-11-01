@@ -66,7 +66,9 @@ struct  actionstate_globalvars gstructActStateGlobal;
 int actionstate_initInventoryPlusVars ()
 {
     short   sOffset1;
+#ifdef INTERFACE_CURSES
     int     iRet;
+#endif
 
     sOffset1 = 0;
 
@@ -99,8 +101,10 @@ int actionstate_initInventoryPlusVars ()
     // this is sort of a sanity check.. because if the expectation is off, then the hard set below is going to potentially be out of bounds.
     if (gsActStateInventorySize != 27)
     {
+#ifdef INTERFACE_CURSES
         iRet = mutils_addToDialogBuffer ("Inventory: allocation not as expected!\n");
         if (iRet != 0) return iRet;
+#endif
 
         return 6;
     }
@@ -265,8 +269,10 @@ int actionstate_initInventoryPlusVars ()
     gstructActStateGlobal.sAct4Monsters = 0;
     gstructActStateGlobal.cGingerEncounter = 0;
 
+#ifdef INTERFACE_CURSES
     iRet = mutils_addToDialogBuffer ("Inventory: 26 dynamic entries + init of game vars.\n");
     if (iRet != 0) return iRet;
+#endif
 
     return 0;
 }
@@ -358,9 +364,9 @@ void actionstate_statSubtraction (struct actionstate_stat *pstructStat, float fV
     // dump the remainder into the float fraction and to round it to 3 decimal places.
 #ifdef WIN32
     // this is the workaround for WIN32, which does not have a roundf
-    fRedo = (float)floorf ((((float)pstructStat->fFraction + (float)fValue) * (float)1000) + (float)0.5) / (float)1000;
+    fRedo = (float)floorf ((((float)pstructStat->fFraction - (float)fValue) * (float)1000) + (float)0.5) / (float)1000;
 #else
-    fRedo = (float)roundf (((float)pstructStat->fFraction + (float)fValue) * (float)1000) / (float)1000;
+    fRedo = (float)roundf (((float)pstructStat->fFraction - (float)fValue) * (float)1000) / (float)1000;
 #endif // WIN32
 
     // take care of the overflow (this should not happen, but you never know).
@@ -552,7 +558,7 @@ int actionstate_randomAct1AlterMonsterValues (char cAffectHP, float fValHP, floa
 
             sprintf (szWorking, "debug: -HP %d (c: %0.3f, p: %0.3f) \n", iVal1HitHP, fVal1Con, fVal1Pwr);
 
-            iRet = mutils_addToDialogBuffer (szWorking);
+            iRet = mdialog_addToDialogWithSrchRep (szWorking);
             if (iRet != 0) return iRet;
         }
 
@@ -586,7 +592,7 @@ int actionstate_randomAct1AlterMonsterValues (char cAffectHP, float fValHP, floa
 
         sprintf (szWorking, "debug: +Fear %d, -Des %d, -Conf %d, -Rage %d\n\n", iVal1HitFear, iVal1HitDesire, iVal1HitConfidence, iVal1HitRage);
 
-        iRet = mutils_addToDialogBuffer (szWorking);
+        iRet = mdialog_addToDialogWithSrchRep (szWorking);
         if (iRet != 0) return iRet;
     }
 

@@ -1,4 +1,20 @@
 
+# Version 0.70 - Tuesday 1st November 2016
+
+Note: 0.60 saves will not work with 0.70. The game will not load the older save files.
+
+A lot of changes between 0.60 and 0.70 :
+Dialog fixes (after a rather good review period).
+Found and fixed a bug with the game stat subtraction logic.
+Fixed another bug with the dialog archive code.
+Fixed a number of issues with the savefile save/restore.
+Backported the Search/Replace tag code that was developed for BMPS.
+
+If you were to check over the code, you might notice a number of code areas that are skipped over due to #ifdef statements. Basically those are there for the CGI-BIN version of the game. Large sections of CURSES specific code is knocked out by #ifdef in return. While the CGI-BIN (web browser) version does exist, I haven't released it yet (it is still being tested). Search/Replace tags in the dialog means more consistency in the dialog (something that was missing from XLEA), but also the ability to change the names of the characters by editing the tag lookup tables.
+
+Sadly, the Search/Replace logic does not apply to the menus (a future enhancement I should think about). This was something that I only noticed when incorporating the Search/Replace logic into HQWA.
+
+
 # Version 0.60 - Saturday 17th September 2016
 
 Initial alpha version released.

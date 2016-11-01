@@ -1,7 +1,7 @@
 
-OBJS= main.o futils.o mutils.o savescreen.o\
+OBJS= main.o futils.o mutils.o mdialog.o savescreen.o\
 gamelogic00.o gamelogic01.o gamelogic02.o gamelogic03.o\
-gamelogic04.o mapdata.o actionstate.o
+gamelogic04.o mapdata.o actionstate.o statefile.o
 CFLAGS=
 CC= gcc
 INCLUDES=
@@ -18,6 +18,9 @@ futils.o: futils.c common.h
 
 mutils.o: mutils.c common.h
 	${CC} ${CFLAGS} -c mutils.c
+
+mdialog.o: mdialog.c common.h
+	${CC} ${CFLAGS} -c mdialog.c
 
 savescreen.o: savescreen.c common.h gamelogic.h mapdata.h actionstate.h
 	${CC} ${CFLAGS} -c savescreen.c
@@ -42,5 +45,9 @@ mapdata.o: mapdata.c common.h gamelogic.h mapdata.h
 
 actionstate.o: actionstate.c common.h gamelogic.h actionstate.h
 	${CC} ${CFLAGS} -c actionstate.c
+
+statefile.o: statefile.c common.h gamelogic.h mapdata.h actionstate.h
+	${CC} ${CFLAGS} -c statefile.c
+
 
 

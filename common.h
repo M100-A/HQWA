@@ -10,6 +10,8 @@
 // Unless I test for the platform, there is no gurantee that it will work..
 //
 
+#define INTERFACE_CURSES 1
+
 #ifdef WIN32
 
 #include	<curses.h>
@@ -187,6 +189,9 @@ int mutils_initAndClearDialogBuffer ();
 // suffix dialog into the dialog buffer
 int mutils_addToDialogBuffer (char *pszString);
 
+// suffix dialog into the dialog buffer (length specific)
+int mutils_addToDialogBufferLenSpec (char *pszString, int iStrLen);
+
 // migrate dialog to archive, and clear the dialog buffer
 void mutils_addDialogToArchive (int iEndSubtract);
 
@@ -195,6 +200,37 @@ int mutils_calcRowStartOffset (int iScrWidth);
 
 // calculate the number of rows of the dialog buffer
 int mutils_calcDialogRows (int iScrWidth);
+
+
+//----------------------------------------------------------------------
+//
+// defines for mdialog..
+//
+
+// definition for the search/replace lookup struct
+struct  mdialog_searchreplacelist
+{
+    char    *pszSearch;
+    char    *pszReplace;
+};
+
+// init the static list
+void mdialog_initStaticList ();
+
+// suffix dialog into the dialog buffer (with search/replace)
+int mdialog_addToDialogWithSrchRep (char *pszString);
+
+
+//----------------------------------------------------------------------
+//
+// defines for statefile functions..
+//
+
+int statefile_parseSaveFile (char *pszFileName, char *pszDateTime);
+
+int statefile_loadSaveFile (char *pszFileName);
+
+int statefile_writeSaveFile (char *pszFileName);
 
 
 //----------------------------------------------------------------------
@@ -219,10 +255,4 @@ int savescreen_calcDialogRows (int iScrWidth);
 
 // create and display the save screen
 int savescreen_playerInteract ();
-
-// function to parse a save file (for display on the load or save dialog screens)
-int savescreen_parseSaveFile (int iSaveId, char *pszDateTime);
-
-// function to load a save file
-int savescreen_loadSaveFile (int iSaveId);
 
