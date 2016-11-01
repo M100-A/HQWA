@@ -118,7 +118,7 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
 
         sprintf (szWorking, "debug: %s PosId %d\n\n", gszMapName, gstructActStateGlobal.sPosId);
 
-        iRet = mutils_addToDialogBuffer (szWorking);
+        iRet = mdialog_addToDialogWithSrchRep (szWorking);
         if (iRet != 0) return iRet;
     }
 
@@ -128,22 +128,22 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
         switch (gstructActStateGlobal.sActId)
         {
         case 1:
-            iRet = mutils_addToDialogBuffer ("Wilda collapses in the hallway, due to exhaustion. As she struggles to keep her eyes open, Wilda curses herself for coming ill-equipped AND accepting such a difficult job.\n\n\n[15 minutes later...]\n\nWilda is briefly woken up both something smothering her, then she passes out.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# collapses in the hallway, due to exhaustion. As she struggles to keep her eyes open, #!00# curses herself for coming ill-equipped AND accepting such a difficult job.\n\n\n[15 minutes later...]\n\n#!00# is briefly woken up both something smothering her, then she passes out.\n\n");
             if (iRet != 0) return iRet;
             break;
 
         case 2:
-            iRet = mutils_addToDialogBuffer ("Wilda collapses in the hallway, due to exhaustion. As she struggles to keep her eyes open, Wilda curses herself for losing her backpack and sword back in the liquid pool. She would have made it further if she had her equipment. Wilda starts to doze off.\n\n\n[5 minutes later...]\n\nWilda thinks that she can see a tentacle monster, but for some reason it backs away.\n\n\n[5 minutes later...]\n\nNot one, but 3 tentacle monsters returned. Wilda starts to panic, but the tentacle monsters jump on her, pinning her down. After a brief struggle, Wilda blacks out.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# collapses in the hallway, due to exhaustion. As she struggles to keep her eyes open, #!00# curses herself for losing her backpack and sword back in the liquid pool. She would have made it further if she had her equipment. #!00# starts to doze off.\n\n\n[5 minutes later...]\n\n#!00# thinks that she can see a tentacle monster, but for some reason it backs away.\n\n\n[5 minutes later...]\n\nNot one, but 3 tentacle monsters returned. #!00# starts to panic, but the tentacle monsters jump on her, pinning her down. After a brief struggle, #!00# blacks out.\n\n");
             if (iRet != 0) return iRet;
             break;
 
         case 3:
-            iRet = mutils_addToDialogBuffer ("Wilda collapses in the hallway, due to exhaustion \"I am just... too tired\"...\n\nCrystal stands over Wilda \"Do you want to get some rest for a while?\"\n\nWilda groggily responds \"Yes, thank you\".\n\nCrystal replies \"Rest... And I will watch over you\".\n\nWilda closes her eyes.\n\nCrystal continues \"Yes... Rest... For in the realm of our lord and master... Cock... even failure is rewarded\"...\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# collapses in the hallway, due to exhaustion \"I am just... too tired\"...\n\n#!03# stands over #!00# \"Do you want to get some rest for a while?\"\n\n#!00# groggily responds \"Yes, thank you\".\n\n#!03# replies \"Rest... And I will watch over you\".\n\n#!00# closes her eyes.\n\n#!03# continues \"Yes... Rest... For in the realm of our lord and master... Cock... even failure is rewarded\"...\n\n");
             if (iRet != 0) return iRet;
             break;
 
         default: // case 4:
-            iRet = mutils_addToDialogBuffer ("Exhausted, Wilda collapses in the hallway \"just... having a quick nap\"...\n\nAs Wilda drifts off to sleep, she shows no concern as she isn\'t alone. The baby in her belly will keep her company.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("Exhausted, #!00# collapses in the hallway \"just... having a quick nap\"...\n\nAs #!00# drifts off to sleep, she shows no concern as she isn\'t alone. The baby in her belly will keep her company.\n\n");
             if (iRet != 0) return iRet;
             break;
         }
@@ -180,13 +180,13 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
         if (gstructActStateCharWilda.structL.iNum >= iCompare)
         {
             if (cFeelingTired != 0)
-                iRet = mutils_addToDialogBuffer ("Wilda is feeling both horny AND tired.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# is feeling both horny AND tired.\n\n");
             else
             {
                 if (((gstructActStateCharWilda.structL.iNum * 3) / 2) > gstructActStateCharWilda.structF.iNum)
-                    iRet = mutils_addToDialogBuffer ("Wilda is feeling rather horny.\n\n");
+                    iRet = mdialog_addToDialogWithSrchRep ("#!00# is feeling rather horny.\n\n");
                 else
-                    iRet = mutils_addToDialogBuffer ("Wilda is starting to feel horny.\n\n");
+                    iRet = mdialog_addToDialogWithSrchRep ("#!00# is starting to feel horny.\n\n");
             }
 
             if (iRet != 0) return iRet;
@@ -201,9 +201,9 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
     if (cFeelingTired != 0)
     {
         if (gstructActStateCharWilda.structS.iNum < 15)
-            iRet = mutils_addToDialogBuffer ("Wilda is feeling VERY tired.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# is feeling VERY tired.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda is starting to feel tired.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# is starting to feel tired.\n\n");
         if (iRet != 0) return iRet;
     }
 
@@ -214,19 +214,19 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             switch (gstructActStateGlobal.cDirect)
             {
             case 1: // came from the south, facing north
-                iRet = mutils_addToDialogBuffer ("Wilda came from the south, and is facing north. ");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# came from the south, and is facing north. ");
                 break;
 
             case 2: // came from the west, facing east
-                iRet = mutils_addToDialogBuffer ("Wilda came from the west, and is facing east. ");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# came from the west, and is facing east. ");
                 break;
 
             case 3: // came from the north, facing south
-                iRet = mutils_addToDialogBuffer ("Wilda came from the north, and is facing south. ");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# came from the north, and is facing south. ");
                 break;
 
             case 4: // came from the east, facing west
-                iRet = mutils_addToDialogBuffer ("Wilda came from the east, and is facing west. ");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# came from the east, and is facing west. ");
                 break;
             }
         }
@@ -235,19 +235,19 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             switch (gstructActStateGlobal.cDirect)
             {
             case 1: // came from the south, facing north
-                iRet = mutils_addToDialogBuffer ("Wilda and Crystal came from the south, and are facing north. ");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# came from the south, and are facing north. ");
                 break;
 
             case 2: // came from the west, facing east
-                iRet = mutils_addToDialogBuffer ("Wilda and Crystal came from the west, and are facing east. ");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# came from the west, and are facing east. ");
                 break;
 
             case 3: // came from the north, facing south
-                iRet = mutils_addToDialogBuffer ("Wilda and Crystal came from the north, and are facing south. ");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# came from the north, and are facing south. ");
                 break;
 
             case 4: // came from the east, facing west
-                iRet = mutils_addToDialogBuffer ("Wilda and Crystal came from the east, and are facing west. ");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# came from the east, and are facing west. ");
                 break;
             }
         }
@@ -260,7 +260,7 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
     else if (gstructActStateGlobal.cStairUpDown == 0)
         gstructActStateGlobal.cStairDirect = 0;
 
-    iRet = mutils_addToDialogBuffer ("This is ");
+    iRet = mdialog_addToDialogWithSrchRep ("This is ");
 
     sVisitVal = gpstructMapPosDynamicCurrent[gstructActStateGlobal.sPosId - 1].sVisitCount;
     cVal1 = gpstructMapPosDynamicCurrent[gstructActStateGlobal.sPosId - 1].cRand1;
@@ -274,23 +274,23 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             case 0:
             case 1:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("an unexciting and unfamiliar");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unexciting and unfamiliar");
                 else
-                    iRet = mutils_addToDialogBuffer ("an unfamiliar and unexciting");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unfamiliar and unexciting");
                 break;
 
             case 2:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("an unexciting and familiar");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unexciting and familiar");
                 else
-                    iRet = mutils_addToDialogBuffer ("a familiar and unexciting");
+                    iRet = mdialog_addToDialogWithSrchRep ("a familiar and unexciting");
                 break;
 
             default:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("an unexciting and well-known");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unexciting and well-known");
                 else
-                    iRet = mutils_addToDialogBuffer ("a well-known and unexciting");
+                    iRet = mdialog_addToDialogWithSrchRep ("a well-known and unexciting");
                 break;
         }
         break;
@@ -301,23 +301,23 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             case 0:
             case 1:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a boring and unfamiliar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a boring and unfamiliar");
                 else
-                    iRet = mutils_addToDialogBuffer ("an unfamiliar and boring");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unfamiliar and boring");
                 break;
 
             case 2:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a boring and familiar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a boring and familiar");
                 else
-                    iRet = mutils_addToDialogBuffer ("a familiar and boring");
+                    iRet = mdialog_addToDialogWithSrchRep ("a familiar and boring");
                 break;
 
             default:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a boring and well-known");
+                    iRet = mdialog_addToDialogWithSrchRep ("a boring and well-known");
                 else
-                    iRet = mutils_addToDialogBuffer ("a well-known and boring");
+                    iRet = mdialog_addToDialogWithSrchRep ("a well-known and boring");
                 break;
         }
         break;
@@ -328,23 +328,23 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             case 0:
             case 1:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a dismal and unfamiliar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a dismal and unfamiliar");
                 else
-                    iRet = mutils_addToDialogBuffer ("an unfamiliar and dismal");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unfamiliar and dismal");
                 break;
 
             case 2:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a dismal and familiar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a dismal and familiar");
                 else
-                    iRet = mutils_addToDialogBuffer ("a familiar and dismal");
+                    iRet = mdialog_addToDialogWithSrchRep ("a familiar and dismal");
                 break;
 
             default:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a dismal and well-known");
+                    iRet = mdialog_addToDialogWithSrchRep ("a dismal and well-known");
                 else
-                    iRet = mutils_addToDialogBuffer ("a well-known and dismal");
+                    iRet = mdialog_addToDialogWithSrchRep ("a well-known and dismal");
                 break;
         }
         break;
@@ -355,23 +355,23 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             case 0:
             case 1:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a gloomy and unfamiliar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a gloomy and unfamiliar");
                 else
-                    iRet = mutils_addToDialogBuffer ("an unfamiliar and gloomy");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unfamiliar and gloomy");
                 break;
 
             case 2:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a gloomy and familiar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a gloomy and familiar");
                 else
-                    iRet = mutils_addToDialogBuffer ("a familiar and gloomy");
+                    iRet = mdialog_addToDialogWithSrchRep ("a familiar and gloomy");
                 break;
 
             default:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a gloomy and well-known");
+                    iRet = mdialog_addToDialogWithSrchRep ("a gloomy and well-known");
                 else
-                    iRet = mutils_addToDialogBuffer ("a well-known and gloomy");
+                    iRet = mdialog_addToDialogWithSrchRep ("a well-known and gloomy");
                 break;
         }
         break;
@@ -382,23 +382,23 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             case 0:
             case 1:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a dull and unfamiliar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a dull and unfamiliar");
                 else
-                    iRet = mutils_addToDialogBuffer ("an unfamiliar and dull");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unfamiliar and dull");
                 break;
 
             case 2:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a dull and familiar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a dull and familiar");
                 else
-                    iRet = mutils_addToDialogBuffer ("a familiar and dull");
+                    iRet = mdialog_addToDialogWithSrchRep ("a familiar and dull");
                 break;
 
             default:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a dull and well-known");
+                    iRet = mdialog_addToDialogWithSrchRep ("a dull and well-known");
                 else
-                    iRet = mutils_addToDialogBuffer ("a well-known and dull");
+                    iRet = mdialog_addToDialogWithSrchRep ("a well-known and dull");
                 break;
         }
         break;
@@ -409,23 +409,23 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             case 0:
             case 1:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a mundane and unfamiliar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a mundane and unfamiliar");
                 else
-                    iRet = mutils_addToDialogBuffer ("an unfamiliar and mundane");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unfamiliar and mundane");
                 break;
 
             case 2:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a mundane and familiar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a mundane and familiar");
                 else
-                    iRet = mutils_addToDialogBuffer ("a familiar and mundane");
+                    iRet = mdialog_addToDialogWithSrchRep ("a familiar and mundane");
                 break;
 
             default:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a mundane and well-known");
+                    iRet = mdialog_addToDialogWithSrchRep ("a mundane and well-known");
                 else
-                    iRet = mutils_addToDialogBuffer ("a well-known and mundane");
+                    iRet = mdialog_addToDialogWithSrchRep ("a well-known and mundane");
                 break;
         }
         break;
@@ -436,23 +436,23 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             case 0:
             case 1:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a drab and unfamiliar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a drab and unfamiliar");
                 else
-                    iRet = mutils_addToDialogBuffer ("an unfamiliar and drab");
+                    iRet = mdialog_addToDialogWithSrchRep ("an unfamiliar and drab");
                 break;
 
             case 2:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a drab and familiar");
+                    iRet = mdialog_addToDialogWithSrchRep ("a drab and familiar");
                 else
-                    iRet = mutils_addToDialogBuffer ("a familiar and drab");
+                    iRet = mdialog_addToDialogWithSrchRep ("a familiar and drab");
                 break;
 
             default:
                 if (cVal2 != 0)
-                    iRet = mutils_addToDialogBuffer ("a drab and well-known");
+                    iRet = mdialog_addToDialogWithSrchRep ("a drab and well-known");
                 else
-                    iRet = mutils_addToDialogBuffer ("a well-known and drab");
+                    iRet = mdialog_addToDialogWithSrchRep ("a well-known and drab");
                 break;
         }
         break;
@@ -463,27 +463,27 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
     switch (iRoomType)
     {
     case 1: // dead-end
-        iRet = mutils_addToDialogBuffer (" dead-end, with only ");
+        iRet = mdialog_addToDialogWithSrchRep (" dead-end, with only ");
         iCount = 1;
         break;
 
     case 2: // elbow turn
-        iRet = mutils_addToDialogBuffer (" turn");
+        iRet = mdialog_addToDialogWithSrchRep (" turn");
         iCount = 2;
         break;
 
     case 3: // hallway
-        iRet = mutils_addToDialogBuffer (" hallway");
+        iRet = mdialog_addToDialogWithSrchRep (" hallway");
         iCount = 2;
         break;
 
     case 4: // t-intersection
-        iRet = mutils_addToDialogBuffer (" T-intersection");
+        iRet = mdialog_addToDialogWithSrchRep (" T-intersection");
         iCount = 3;
         break;
 
     default: // cross-intersection
-        iRet = mutils_addToDialogBuffer (" cross-intersection");
+        iRet = mdialog_addToDialogWithSrchRep (" cross-intersection");
         iCount = 4;
         break;
     }
@@ -493,7 +493,7 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
 
     if (iRoomType != 1)
     {
-        iRet = mutils_addToDialogBuffer (", with ");
+        iRet = mdialog_addToDialogWithSrchRep (", with ");
         if (iRet != 0) return iRet;
 
         // if there are stairs
@@ -534,16 +534,16 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             // leading up
             if (gstructActStateGlobal.cStairUpDown == 1)
             {
-                iRet = mutils_addToDialogBuffer ("stairway leading up to the ");
+                iRet = mdialog_addToDialogWithSrchRep ("stairway leading up to the ");
             }
             // leading down
             else
             {
-                iRet = mutils_addToDialogBuffer ("stairway leading down to the ");
+                iRet = mdialog_addToDialogWithSrchRep ("stairway leading down to the ");
             }
             if (iRet != 0) return iRet;
 
-            iRet = mutils_addToDialogBuffer (pcDirect);
+            iRet = mdialog_addToDialogWithSrchRep (pcDirect);
             if (iRet != 0) return iRet;
 
             // decrement the counter by 1, so that the code below matches up.
@@ -563,13 +563,13 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             {
                 if (cSep1 != 0)
                 {
-                    iRet = mutils_addToDialogBuffer (", ");
+                    iRet = mdialog_addToDialogWithSrchRep (", ");
                     if (iRet != 0) return iRet;
                 }
 
                 if (iCount == 1)
                 {
-                    iRet = mutils_addToDialogBuffer ("and ");
+                    iRet = mdialog_addToDialogWithSrchRep ("and ");
                     if (iRet != 0) return iRet;
                 }
 
@@ -579,7 +579,7 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             iRet = mapdata_printLinkVisitValue (structMapDataMove.sVisitNorth);
             if (iRet != 0) return iRet;
 
-            iRet = mutils_addToDialogBuffer ("path to the north");
+            iRet = mdialog_addToDialogWithSrchRep ("path to the north");
             if (iRet != 0) return iRet;
 
             if (iCount)
@@ -611,13 +611,13 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             {
                 if (cSep1 != 0)
                 {
-                    iRet = mutils_addToDialogBuffer (", ");
+                    iRet = mdialog_addToDialogWithSrchRep (", ");
                     if (iRet != 0) return iRet;
                 }
 
                 if (iCount == 1)
                 {
-                    iRet = mutils_addToDialogBuffer ("and ");
+                    iRet = mdialog_addToDialogWithSrchRep ("and ");
                     if (iRet != 0) return iRet;
                 }
 
@@ -627,7 +627,7 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             iRet = mapdata_printLinkVisitValue (structMapDataMove.sVisitEast);
             if (iRet != 0) return iRet;
 
-            iRet = mutils_addToDialogBuffer ("path to the east");
+            iRet = mdialog_addToDialogWithSrchRep ("path to the east");
             if (iRet != 0) return iRet;
 
             if (iCount)
@@ -659,13 +659,13 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             {
                 if (cSep1 != 0)
                 {
-                    iRet = mutils_addToDialogBuffer (", ");
+                    iRet = mdialog_addToDialogWithSrchRep (", ");
                     if (iRet != 0) return iRet;
                 }
 
                 if (iCount == 1)
                 {
-                    iRet = mutils_addToDialogBuffer ("and ");
+                    iRet = mdialog_addToDialogWithSrchRep ("and ");
                     if (iRet != 0) return iRet;
                 }
 
@@ -675,7 +675,7 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             iRet = mapdata_printLinkVisitValue (structMapDataMove.sVisitSouth);
             if (iRet != 0) return iRet;
 
-            iRet = mutils_addToDialogBuffer ("path to the south");
+            iRet = mdialog_addToDialogWithSrchRep ("path to the south");
             if (iRet != 0) return iRet;
 
             if (iCount)
@@ -707,13 +707,13 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             {
                 if (cSep1 != 0)
                 {
-                    iRet = mutils_addToDialogBuffer (", ");
+                    iRet = mdialog_addToDialogWithSrchRep (", ");
                     if (iRet != 0) return iRet;
                 }
 
                 if (iCount == 1)
                 {
-                    iRet = mutils_addToDialogBuffer ("and ");
+                    iRet = mdialog_addToDialogWithSrchRep ("and ");
                     if (iRet != 0) return iRet;
                 }
 
@@ -723,7 +723,7 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             iRet = mapdata_printLinkVisitValue (structMapDataMove.sVisitWest);
             if (iRet != 0) return iRet;
 
-            iRet = mutils_addToDialogBuffer ("path to the west");
+            iRet = mdialog_addToDialogWithSrchRep ("path to the west");
             if (iRet != 0) return iRet;
 
             if (iCount)
@@ -745,24 +745,24 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
         }
     }
 
-    iRet = mutils_addToDialogBuffer (".\n\n");
+    iRet = mdialog_addToDialogWithSrchRep (".\n\n");
     if (iRet != 0) return iRet;
 
     if ((gstructActStateGlobal.sActId == 1) && (gstructActStateGlobal.sPosId == 3))
     {
-        iRet = mutils_addToDialogBuffer ("Wilda knows that there is a passageway behind the northern wall, but cannot do anything about it right now.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# knows that there is a passageway behind the northern wall, but cannot do anything about it right now.\n\n");
         if (iRet != 0) return iRet;
     }
 
     if ((gstructActStateGlobal.sActId == 2) && (gstructActStateGlobal.sPosId == 2))
     {
-        iRet = mutils_addToDialogBuffer ("Wilda suspects that there is a passageway behind the eastern wall.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# suspects that there is a passageway behind the eastern wall.\n\n");
         if (iRet != 0) return iRet;
     }
 
     if ((gstructActStateGlobal.sActId == 3) && (gstructActStateGlobal.sPosId == 2))
     {
-        iRet = mutils_addToDialogBuffer ("There is also a familiar path to the south, but Crystal told Wilda not to go that way.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("There is also a familiar path to the south, but #!03# told #!00# not to go that way.\n\n");
         if (iRet != 0) return iRet;
     }
 
@@ -771,25 +771,25 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
     {
         if (structMapDataMove.cAllowNorth == 1)
         {
-            iRet = mutils_addToDialogBuffer ("There is something strange about the northern wall.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("There is something strange about the northern wall.\n\n");
             if (iRet != 0) return iRet;
         }
 
         if (structMapDataMove.cAllowEast == 1)
         {
-            iRet = mutils_addToDialogBuffer ("There is something strange about the eastern wall.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("There is something strange about the eastern wall.\n\n");
             if (iRet != 0) return iRet;
         }
 
         if (structMapDataMove.cAllowSouth == 1)
         {
-            iRet = mutils_addToDialogBuffer ("There is something strange about the southern wall.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("There is something strange about the southern wall.\n\n");
             if (iRet != 0) return iRet;
         }
 
         if (structMapDataMove.cAllowWest == 1)
         {
-            iRet = mutils_addToDialogBuffer ("There is something strange about the western wall.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("There is something strange about the western wall.\n\n");
             if (iRet != 0) return iRet;
         }
     }
@@ -828,7 +828,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
     case 1: // north
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">North");
+            iRet = mdialog_addToDialogWithSrchRep (">North");
             if (iRet != 0) return iRet;
         }
         gstructActStateGlobal.cDirect = 1;
@@ -839,7 +839,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
     case 2: // east
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">East");
+            iRet = mdialog_addToDialogWithSrchRep (">East");
             if (iRet != 0) return iRet;
         }
         gstructActStateGlobal.cDirect = 2;
@@ -850,7 +850,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
     case 3: // south
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">South");
+            iRet = mdialog_addToDialogWithSrchRep (">South");
             if (iRet != 0) return iRet;
         }
         gstructActStateGlobal.cDirect = 3;
@@ -861,7 +861,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
     default: // let's assume this is west
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">West");
+            iRet = mdialog_addToDialogWithSrchRep (">West");
             if (iRet != 0) return iRet;
         }
         gstructActStateGlobal.cDirect = 4;
@@ -877,156 +877,156 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
             // leading up
             if (gstructActStateGlobal.cStairUpDown == 1)
             {
-                iRet = mutils_addToDialogBuffer (" stairs up\n\n");
+                iRet = mdialog_addToDialogWithSrchRep (" stairs up\n\n");
             }
             // leading down
             else
             {
-                iRet = mutils_addToDialogBuffer (" stairs down\n\n");
+                iRet = mdialog_addToDialogWithSrchRep (" stairs down\n\n");
             }
             if (iRet != 0) return iRet;
         }
 
         if (gstructActStateGlobal.sActId == 3)
         {
-            iRet = mutils_addToDialogBuffer ("Wilda and Crystal ");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# ");
             if (iRet != 0) return iRet;
 
             // leading up
             if (gstructActStateGlobal.cStairUpDown == 1)
-                iRet = mutils_addToDialogBuffer ("ascend the ");
+                iRet = mdialog_addToDialogWithSrchRep ("ascend the ");
             else
-                iRet = mutils_addToDialogBuffer ("descend the ");
+                iRet = mdialog_addToDialogWithSrchRep ("descend the ");
             if (iRet != 0) return iRet;
 
         }
         else
         {
-            iRet = mutils_addToDialogBuffer ("Wilda walks ");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# walks ");
             if (iRet != 0) return iRet;
 
             // leading up
             if (gstructActStateGlobal.cStairUpDown == 1)
-                iRet = mutils_addToDialogBuffer ("up the ");
+                iRet = mdialog_addToDialogWithSrchRep ("up the ");
             else
-                iRet = mutils_addToDialogBuffer ("down the ");
+                iRet = mdialog_addToDialogWithSrchRep ("down the ");
             if (iRet != 0) return iRet;
         }
 
         switch (iSubSceneId)
         {
         case 1: // north
-            iRet = mutils_addToDialogBuffer ("northern");
+            iRet = mdialog_addToDialogWithSrchRep ("northern");
             break;
 
         case 2: // east
-            iRet = mutils_addToDialogBuffer ("eastern");
+            iRet = mdialog_addToDialogWithSrchRep ("eastern");
             break;
 
         case 3: // south
-            iRet = mutils_addToDialogBuffer ("southern");
+            iRet = mdialog_addToDialogWithSrchRep ("southern");
             break;
 
         default: // let's assume this is west
-            iRet = mutils_addToDialogBuffer ("western");
+            iRet = mdialog_addToDialogWithSrchRep ("western");
             break;
         }
         if (iRet != 0) return iRet;
 
-        iRet = mutils_addToDialogBuffer (" stairway.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep (" stairway.\n\n");
         if (iRet != 0) return iRet;
     }
     else
     {
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer ("\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("\n\n");
             if (iRet != 0) return iRet;
         }
 
         if (gstructActStateGlobal.sActId == 3)
         {
-            iRet = mutils_addToDialogBuffer ("Wilda and Crystal ");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# ");
             if (iRet != 0) return iRet;
 
             switch (gpstructMapLinkDynamicCurrent[sLinkId - 1].cRand2)
             {
             case 0:
-                iRet = mutils_addToDialogBuffer ("trudge along");
+                iRet = mdialog_addToDialogWithSrchRep ("trudge along");
                 break;
 
             case 1:
-                iRet = mutils_addToDialogBuffer ("wonder along");
+                iRet = mdialog_addToDialogWithSrchRep ("wonder along");
                 break;
 
             case 2:
-                iRet = mutils_addToDialogBuffer ("traverse");
+                iRet = mdialog_addToDialogWithSrchRep ("traverse");
                 break;
 
             case 3:
-                iRet = mutils_addToDialogBuffer ("navigate");
+                iRet = mdialog_addToDialogWithSrchRep ("navigate");
                 break;
 
             default:
-                iRet = mutils_addToDialogBuffer ("pass through");
+                iRet = mdialog_addToDialogWithSrchRep ("pass through");
                 break;
             }
             if (iRet != 0) return iRet;
         }
         else
         {
-            iRet = mutils_addToDialogBuffer ("Wilda ");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# ");
             if (iRet != 0) return iRet;
 
             switch (gpstructMapLinkDynamicCurrent[sLinkId - 1].cRand2)
             {
             case 0:
-                iRet = mutils_addToDialogBuffer ("trudges along");
+                iRet = mdialog_addToDialogWithSrchRep ("trudges along");
                 break;
 
             case 1:
-                iRet = mutils_addToDialogBuffer ("wonders along");
+                iRet = mdialog_addToDialogWithSrchRep ("wonders along");
                 break;
 
             case 2:
-                iRet = mutils_addToDialogBuffer ("traverses");
+                iRet = mdialog_addToDialogWithSrchRep ("traverses");
                 break;
 
             case 3:
-                iRet = mutils_addToDialogBuffer ("navigates");
+                iRet = mdialog_addToDialogWithSrchRep ("navigates");
                 break;
 
             default:
-                iRet = mutils_addToDialogBuffer ("passes through");
+                iRet = mdialog_addToDialogWithSrchRep ("passes through");
                 break;
             }
             if (iRet != 0) return iRet;
         }
 
-        iRet = mutils_addToDialogBuffer (" the ");
+        iRet = mdialog_addToDialogWithSrchRep (" the ");
         if (iRet != 0) return iRet;
 
         switch (iSubSceneId)
         {
         case 1: // north
-            iRet = mutils_addToDialogBuffer ("northern");
+            iRet = mdialog_addToDialogWithSrchRep ("northern");
             break;
 
         case 2: // east
-            iRet = mutils_addToDialogBuffer ("eastern");
+            iRet = mdialog_addToDialogWithSrchRep ("eastern");
             break;
 
         case 3: // south
-            iRet = mutils_addToDialogBuffer ("southern");
+            iRet = mdialog_addToDialogWithSrchRep ("southern");
             break;
 
         default: // let's assume this is west
-            iRet = mutils_addToDialogBuffer ("western");
+            iRet = mdialog_addToDialogWithSrchRep ("western");
             break;
         }
         if (iRet != 0) return iRet;
 
-        iRet = mutils_addToDialogBuffer (" pathway.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep (" pathway.\n\n");
         if (iRet != 0) return iRet;
     }
 
@@ -1169,7 +1169,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
 
             sprintf (szWorking, "ERROR: could not lookup event id %d\n\n", (int)cSpecialId);
 
-            iRet = mutils_addToDialogBuffer (szWorking);
+            iRet = mdialog_addToDialogWithSrchRep (szWorking);
             if (iRet != 0) return iRet;
         }
         else
@@ -1226,7 +1226,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
 
                         sprintf (szWorking, "debug: ENCOUNTER triggered PosId %d, %d pct <= %d rnd, %d past enc.\n\n", (int)sNewPosId, iMapPercentage, iRndPercentage, iPastPercentage);
 
-                        iRet = mutils_addToDialogBuffer (szWorking);
+                        iRet = mdialog_addToDialogWithSrchRep (szWorking);
                         if (iRet != 0) return iRet;
                     }
 
@@ -1239,11 +1239,11 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                         iRndNum = (int)(rand() % 3);
 
                         if (iRndNum == 2)
-                            iRet = mutils_addToDialogBuffer ("As Wilda reaches the end of the pathway, a tentacle monster approaches. Wilda readies her sword.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("As #!00# reaches the end of the pathway, a tentacle monster approaches. #!00# readies her sword.\n\n");
                         else if (iRndNum != 0)
-                            iRet = mutils_addToDialogBuffer ("When Wilda arrives at the end of the pathway, a tentacle monster drops from above, into the liquid. Wilda quickly draws her sword.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("When #!00# arrives at the end of the pathway, a tentacle monster drops from above, into the liquid. #!00# quickly draws her sword.\n\n");
                         else
-                            iRet = mutils_addToDialogBuffer ("As Wilda arrives at the end of the pathway, she hears a splashing sound from behind her. She turns around to see that a tentacle monster has followed her along the pathway. Wilda draws her sword.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("As #!00# arrives at the end of the pathway, she hears a splashing sound from behind her. She turns around to see that a tentacle monster has followed her along the pathway. #!00# draws her sword.\n\n");
                         if (iRet != 0) return iRet;
 
                         // setup our monster parameters
@@ -1264,7 +1264,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                                     gstructActStateOpponent.iDesire,
                                     gstructActStateOpponent.iFear);
 
-                            iRet = mutils_addToDialogBuffer (szWorking);
+                            iRet = mdialog_addToDialogWithSrchRep (szWorking);
                             if (iRet != 0) return iRet;
                         }
 
@@ -1276,11 +1276,11 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                         iRndNum = (int)(rand() % 3);
 
                         if (iRndNum == 2)
-                            iRet = mutils_addToDialogBuffer ("While walking along the pathway, Wilda had a feeling that she is being watched. Wilda readies her spanking paddle, and a tentacle monster appears.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("While walking along the pathway, #!00# had a feeling that she is being watched. #!00# readies her spanking paddle, and a tentacle monster appears.\n\n");
                         else if (iRndNum != 0)
-                            iRet = mutils_addToDialogBuffer ("As Wilda arrives at the end of the pathway, she can see a tentacle monster, which is attached to a wall, starting to stir. Wilda readies her spanking paddle.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("As #!00# arrives at the end of the pathway, she can see a tentacle monster, which is attached to a wall, starting to stir. #!00# readies her spanking paddle.\n\n");
                         else
-                            iRet = mutils_addToDialogBuffer ("For some time now, Wilda has been hearing splashing of liquid from ahead of her. Wilda does not back down from a fight, so she has readied her spanking paddle and continued walking. At the end of the pathway, a tentacle monster falls from the ceiling in front of Wilda.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("For some time now, #!00# has been hearing splashing of liquid from ahead of her. #!00# does not back down from a fight, so she has readied her spanking paddle and continued walking. At the end of the pathway, a tentacle monster falls from the ceiling in front of #!00#.\n\n");
                         if (iRet != 0) return iRet;
 
                         // setup our monster parameters
@@ -1301,7 +1301,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                                     gstructActStateOpponent.iDesire,
                                     gstructActStateOpponent.iFear);
 
-                            iRet = mutils_addToDialogBuffer (szWorking);
+                            iRet = mdialog_addToDialogWithSrchRep (szWorking);
                             if (iRet != 0) return iRet;
                         }
 
@@ -1313,11 +1313,11 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                         iRndNum = (int)(rand() % 3);
 
                         if (iRndNum == 2)
-                            iRet = mutils_addToDialogBuffer ("Wilda and Crystal are walking along a pathway, when a tentacle monster drops from the ceiling in front of them. Wilda glances at Crystal, who just nods her head. Wilda smiles and looks at the tentacle monster.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# are walking along a pathway, when a tentacle monster drops from the ceiling in front of them. #!00# glances at #!03#, who just nods her head. #!00# smiles and looks at the tentacle monster.\n\n");
                         else if (iRndNum != 0)
-                            iRet = mutils_addToDialogBuffer ("Wilda and Crystal arrive at the end of a pathway, when a tentacle monster rises up out of the liquid in front of Wilda. Wilda smiles, as she is ready.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# arrive at the end of a pathway, when a tentacle monster rises up out of the liquid in front of #!00#. #!00# smiles, as she is ready.\n\n");
                         else
-                            iRet = mutils_addToDialogBuffer ("After arriving at the end of a pathway, a tentacle monster appears. Crystal steps back, giving both Wilda and the tentacle monster space.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("After arriving at the end of a pathway, a tentacle monster appears. #!03# steps back, giving both #!00# and the tentacle monster space.\n\n");
                         if (iRet != 0) return iRet;
 
                         // setup our monster parameters
@@ -1338,7 +1338,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                                     gstructActStateOpponent.iDesire,
                                     gstructActStateOpponent.iFear);
 
-                            iRet = mutils_addToDialogBuffer (szWorking);
+                            iRet = mdialog_addToDialogWithSrchRep (szWorking);
                             if (iRet != 0) return iRet;
                         }
 
@@ -1350,13 +1350,13 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                         iRndNum = (int)(rand() % 4);
 
                         if (iRndNum == 3)
-                            iRet = mutils_addToDialogBuffer ("Wilda arrives at the end of a pathway, and notices ripples in the liquid that are not from her. Wilda waits with anticipation as a tentacle monster appears.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("#!00# arrives at the end of a pathway, and notices ripples in the liquid that are not from her. #!00# waits with anticipation as a tentacle monster appears.\n\n");
                         else if (iRndNum == 2)
-                            iRet = mutils_addToDialogBuffer ("As she arrives at the end of a pathway, Wilda notices a tentacle monster that is clinging to a wall. Wilda smiles and walks over to it.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("As she arrives at the end of a pathway, #!00# notices a tentacle monster that is clinging to a wall. #!00# smiles and walks over to it.\n\n");
                         else if (iRndNum != 0)
-                            iRet = mutils_addToDialogBuffer ("When Wilda arrives at the end of a pathway, she is greeted by a tentacle monster that drops from the ceiling. Wilda licks her lips in anticipation as she approaches it.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("When #!00# arrives at the end of a pathway, she is greeted by a tentacle monster that drops from the ceiling. #!00# licks her lips in anticipation as she approaches it.\n\n");
                         else
-                            iRet = mutils_addToDialogBuffer ("As she is walking along a pathway, Wilda hears something moving behind her. Wilda decides to keep walking to the end of the pathway, and allow her stalker to catch up. Wilda did not have to wait long for the tentacle monster to arrive.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("As she is walking along a pathway, #!00# hears something moving behind her. #!00# decides to keep walking to the end of the pathway, and allow her stalker to catch up. #!00# did not have to wait long for the tentacle monster to arrive.\n\n");
                         if (iRet != 0) return iRet;
 
                         // setup our monster parameters
@@ -1377,7 +1377,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                                     gstructActStateOpponent.iDesire,
                                     gstructActStateOpponent.iFear);
 
-                            iRet = mutils_addToDialogBuffer (szWorking);
+                            iRet = mdialog_addToDialogWithSrchRep (szWorking);
                             if (iRet != 0) return iRet;
                         }
 
@@ -1394,7 +1394,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
 
                         sprintf (szWorking, "debug: Enc PosId %d, %d pct > %d rnd, %d past enc.\n\n", (int)sNewPosId, iMapPercentage, iRndPercentage, iPastPercentage);
 
-                        iRet = mutils_addToDialogBuffer (szWorking);
+                        iRet = mdialog_addToDialogWithSrchRep (szWorking);
                         if (iRet != 0) return iRet;
                     }
                 }
@@ -1407,7 +1407,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
 
                     sprintf (szWorking, "debug: Enc PosId %d, %d pct < %d past enc.\n\n", (int)sNewPosId, iMapPercentage, iPastPercentage);
 
-                    iRet = mutils_addToDialogBuffer (szWorking);
+                    iRet = mdialog_addToDialogWithSrchRep (szWorking);
                     if (iRet != 0) return iRet;
                 }
             }
@@ -1420,7 +1420,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
 
                 sprintf (szWorking, "debug: Enc PosId %d, default no encounter.\n\n", (int)sNewPosId);
 
-                iRet = mutils_addToDialogBuffer (szWorking);
+                iRet = mdialog_addToDialogWithSrchRep (szWorking);
                 if (iRet != 0) return iRet;
             }
         }
@@ -1445,7 +1445,7 @@ int gamelogic02_scene1022 (int iSubSceneId, char cSubFlag)
 
     if (cSubFlag == 0)
     {
-        iRet = mutils_addToDialogBuffer (">Masturbate\n\n");
+        iRet = mdialog_addToDialogWithSrchRep (">Masturbate\n\n");
         if (iRet != 0) return iRet;
     }
 
@@ -1454,7 +1454,7 @@ int gamelogic02_scene1022 (int iSubSceneId, char cSubFlag)
 
     if (iSubSceneId != 0)
     {
-        iRet = mutils_addToDialogBuffer ("Wilda finds that she can no longer hold out. She desperately needs to satisfy her urges.\n\n\n[4 minutes later...]\n\nWilda takes a deep breath and sighs. She ended up masturbating twice in a row.\n\nWilda decides that now that her private time is over, and she needs to get moving again.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# finds that she can no longer hold out. She desperately needs to satisfy her urges.\n\n\n[4 minutes later...]\n\n#!00# takes a deep breath and sighs. She ended up masturbating twice in a row.\n\n#!00# decides that now that her private time is over, and she needs to get moving again.\n\n");
         if (iRet != 0) return iRet;
 
         // decrease Lust
@@ -1469,16 +1469,16 @@ int gamelogic02_scene1022 (int iSubSceneId, char cSubFlag)
     }
     else
     {
-        iRet = mutils_addToDialogBuffer ("Wilda finds it strange that her arousal is");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# finds it strange that her arousal is");
         if (iRet != 0) return iRet;
 
         if (gstructActStateGlobal.sActId != 1)
         {
-            iRet = mutils_addToDialogBuffer (" still");
+            iRet = mdialog_addToDialogWithSrchRep (" still");
             if (iRet != 0) return iRet;
         }
 
-        iRet = mutils_addToDialogBuffer (" growing, but decides to take care of her urges now, rather than wait till later.\n\n\n[2 minutes later...]\n\nIt was only once, but once was enough. Wilda looks around. She is still alone inside this dungeon.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep (" growing, but decides to take care of her urges now, rather than wait till later.\n\n\n[2 minutes later...]\n\nIt was only once, but once was enough. #!00# looks around. She is still alone inside this dungeon.\n\n");
         if (iRet != 0) return iRet;
 
         // decrease Lust
@@ -1492,9 +1492,9 @@ int gamelogic02_scene1022 (int iSubSceneId, char cSubFlag)
         actionstate_statSubtraction (&gstructActStateCharWilda.structS, (float)1.066, (int)0);
 
         if (sVisit > 2)
-            iRet = mutils_addToDialogBuffer ("Wilda decides it is time to leave, as this place is starting to get boring.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# decides it is time to leave, as this place is starting to get boring.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda decides that she should keep moving.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# decides that she should keep moving.\n\n");
         if (iRet != 0) return iRet;
     }
 

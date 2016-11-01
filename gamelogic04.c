@@ -106,10 +106,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 1:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Slash with sword, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Slash with sword, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs a basic offensive/defensive move, by slashing the monster with her sword then readying herself for the potential counter attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs a basic offensive/defensive move, by slashing the monster with her sword then readying herself for the potential counter attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -130,10 +130,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 2:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Slash with sword, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Slash with sword, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda slashes the monster with her sword, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# slashes the monster with her sword, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -155,10 +155,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 3:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Slash with sword, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Slash with sword, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs a basic offensive combo, by slashing the monster with her sword, then punching it with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs a basic offensive combo, by slashing the monster with her sword, then punching it with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -178,10 +178,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 4:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Slash with sword, repeatedly\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Slash with sword, repeatedly\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda goes all out, slashing the monster with her sword multiple times.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# goes all out, slashing the monster with her sword multiple times.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -202,10 +202,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 5:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Stab with sword, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Stab with sword, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs a harder offensive/defensive move, by stabbing the monster with her sword, then readying herself for the potential counter attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs a harder offensive/defensive move, by stabbing the monster with her sword, then readying herself for the potential counter attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -226,10 +226,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 6:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Stab with sword, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Stab with sword, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda stabs the monster with her sword, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# stabs the monster with her sword, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -251,10 +251,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 7:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Stab with sword, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Stab with sword, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs a harder offensive combo, by stabbing the monster with her sword, then punching it with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs a harder offensive combo, by stabbing the monster with her sword, then punching it with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -274,10 +274,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 8:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Stab with sword, repeatedly\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Stab with sword, repeatedly\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda goes all out, stabbing the monster with her sword multiple times.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# goes all out, stabbing the monster with her sword multiple times.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -298,10 +298,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 9:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kick with foot, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kick with foot, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs a weak offensive/defensive move, by kicking the monster with her boot, then readying herself for the potential counter attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs a weak offensive/defensive move, by kicking the monster with her boot, then readying herself for the potential counter attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -322,10 +322,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 10:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kick with foot, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kick with foot, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda kicks the monster with her boot, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# kicks the monster with her boot, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -347,10 +347,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 11:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kick with foot, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kick with foot, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs a weak offensive combo, by kicking the monster with her boot, then punching it with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs a weak offensive combo, by kicking the monster with her boot, then punching it with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -370,10 +370,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 12:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kick with foot, repeatedly\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kick with foot, repeatedly\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda decides to kick the monster with her boots, multiple times.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# decides to kick the monster with her boots, multiple times.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -393,10 +393,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 13:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Sword feint attack, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Sword feint attack, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to slash the monster with her sword, then readies herself for the potential counter attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to slash the monster with her sword, then readies herself for the potential counter attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -415,10 +415,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 14:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Sword feint attack, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Sword feint attack, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to slash the monster with her sword, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to slash the monster with her sword, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -438,10 +438,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 15:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Sword feint attack, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Sword feint attack, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to slash the monster with her sword, then punches the monster with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to slash the monster with her sword, then punches the monster with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -459,10 +459,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 16:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Sword feint attack, then real slash with sword\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Sword feint attack, then real slash with sword\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to slash the monster with her sword, then slashes the monster with her sword.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to slash the monster with her sword, then slashes the monster with her sword.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -482,10 +482,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 17:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Sword feint attack, then real stab with sword\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Sword feint attack, then real stab with sword\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to stab the monster with her sword, then stabs the monster with her sword.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to stab the monster with her sword, then stabs the monster with her sword.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -505,10 +505,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 18:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Foot feint attack, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Foot feint attack, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda threatens to kick the monster with her boot, then readies herself for the potential counter attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# threatens to kick the monster with her boot, then readies herself for the potential counter attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -527,10 +527,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 19:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Foot feint attack, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Foot feint attack, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda threatens to the monster with her boot, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# threatens to the monster with her boot, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -549,10 +549,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 20:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Foot feint attack, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Foot feint attack, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda threatens to the monster with her boot, then punches it with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# threatens to the monster with her boot, then punches it with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -570,10 +570,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 21:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Foot feint attack, then real slash with sword\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Foot feint attack, then real slash with sword\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda threatens to the monster with her boot, then slashes it with her sword.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# threatens to the monster with her boot, then slashes it with her sword.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -595,10 +595,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 22:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Foot feint attack, then real stab with sword\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Foot feint attack, then real stab with sword\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda threatens to the monster with her boot, then stabs it with her sword.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# threatens to the monster with her boot, then stabs it with her sword.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -620,10 +620,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 23:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda uses a tactical defensive combo, by pretending to hesitate, then readying herself for the potential attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# uses a tactical defensive combo, by pretending to hesitate, then readying herself for the potential attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -640,10 +640,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 24:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to hesitate, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to hesitate, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -661,10 +661,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 25:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to hesitate, then punches the monster with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to hesitate, then punches the monster with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -683,10 +683,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     case 26:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then real slash with sword\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then real slash with sword\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pauses, then slashes the monster with her sword.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pauses, then slashes the monster with her sword.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -705,10 +705,10 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     default:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then real stab with sword\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then real stab with sword\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda waits for a better opening, then stabs the monster with her sword.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# waits for a better opening, then stabs the monster with her sword.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -767,11 +767,11 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     {
     case 0: // run away
         if (cDefensive == 2)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster briefly hesitates, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster briefly hesitates, then runs away.\n\n");
         else if (cDefensive != 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster takes advantage of Wilda\'s retreat, and runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster takes advantage of #!00#\'s retreat, and runs away.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("The tentacle monster runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster runs away.\n\n");
         if (iRet != 0) return iRet;
 
         break;
@@ -781,11 +781,11 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
         actionstate_statAddition (&gstructActStateCharWilda.structL, actionstate_randomFloatValue ((float)15, (float)9, 400), 6000);
 
         if (cDefensive == 2)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster performs an unconventional retreat, by spraying Wilda with goo, then running away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster performs an unconventional retreat, by spraying #!00# with goo, then running away.\n\n");
         else if (cDefensive != 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster moves towards Wilda, sprays Wilda with goo, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster moves towards #!00#, sprays #!00# with goo, then runs away.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("The tentacle monster sprays Wilda with goo, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster sprays #!00# with goo, then runs away.\n\n");
         if (iRet != 0) return iRet;
 
         break;
@@ -808,7 +808,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.2), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster responds by attacking it with one of its tentacles, then running away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster responds by attacking it with one of its tentacles, then running away.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -820,7 +820,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 3), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 2.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster weakly attacks Wilda it with one of its tentacles, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster weakly attacks #!00# it with one of its tentacles, then runs away.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -831,7 +831,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2.5), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster performs a tactical retreat, by attacking Wilda with one of its tentacles, then running away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster performs a tactical retreat, by attacking #!00# with one of its tentacles, then running away.\n\n");
         }
         if (iRet != 0) return iRet;
 
@@ -842,9 +842,9 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
         iRndNum = (int)(rand() % 2);
 
         if (iRndNum == 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster appears to hesitate, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster appears to hesitate, then runs away.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("The tentacle monster hesitates, almost as if it is gripped by fear, then it runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster hesitates, almost as if it is gripped by fear, then it runs away.\n\n");
         if (iRet != 0) return iRet;
 
         break;
@@ -869,7 +869,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.2), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster sprays Wilda with goo, then attacks her with a tentacle.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster sprays #!00# with goo, then attacks her with a tentacle.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -881,7 +881,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 3), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 2.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster sprays Wilda with its goo, then weakly attacks her with its tentacle.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster sprays #!00# with its goo, then weakly attacks her with its tentacle.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -892,7 +892,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2.5), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster sprays Wilda with goo, then pummels her with a tentacle.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster sprays #!00# with goo, then pummels her with a tentacle.\n\n");
         }
 
         if (iRet != 0) return iRet;
@@ -916,7 +916,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.2), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster hesitates, as if it is evaluating Wilda\'s defensive stance, then it attacks with one of its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster hesitates, as if it is evaluating #!00#\'s defensive stance, then it attacks with one of its tentacles.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -927,7 +927,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 3), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 2.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster hesitates, then it attacks weakly with one of its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster hesitates, then it attacks weakly with one of its tentacles.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -938,7 +938,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2.5), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster seems to be waiting for something, then it strikes hard with one of its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster seems to be waiting for something, then it strikes hard with one of its tentacles.\n\n");
         }
 
         if (iRet != 0) return iRet;
@@ -962,7 +962,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2.2), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.4), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster hits Wilda with a tentacle, then waits. It has no intention of running away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster hits #!00# with a tentacle, then waits. It has no intention of running away.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -973,7 +973,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 3.2), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 2.7), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster weakly hits Wilda, then hesitates.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster weakly hits #!00#, then hesitates.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -984,7 +984,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2.7), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.7), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster hits Wilda with a tentacle, but does not do anything else afterwards.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster hits #!00# with a tentacle, but does not do anything else afterwards.\n\n");
         }
 
         if (iRet != 0) return iRet;
@@ -1008,7 +1008,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.2), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster hits Wilda twice in a row with its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster hits #!00# twice in a row with its tentacles.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -1019,7 +1019,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 3), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 2.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster weakly hits Wilda with its tentacles, twice.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster weakly hits #!00# with its tentacles, twice.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -1030,7 +1030,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2.5), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster takes advantage of the opening, and hits Wilda twice with its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster takes advantage of the opening, and hits #!00# twice with its tentacles.\n\n");
         }
 
         if (iRet != 0) return iRet;
@@ -1054,7 +1054,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 2), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 1.2), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster launches an all out attack on Wilda with its tentacles flailing.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster launches an all out attack on #!00# with its tentacles flailing.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -1065,7 +1065,7 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structG, (float)(fStaDec / 3), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 2.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster rushes at Wilda, hitting her multiple times with its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster rushes at #!00#, hitting her multiple times with its tentacles.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -1079,9 +1079,9 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum == 0)
-                iRet = mutils_addToDialogBuffer ("The tentacle monster, taking advantage of an opening, pummels Wilda with its tentacles.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster, taking advantage of an opening, pummels #!00# with its tentacles.\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("The tentacle monster, goes on the offensive and slams Wilda, multiple times, with its flailing tentacles.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster, goes on the offensive and slams #!00#, multiple times, with its flailing tentacles.\n\n");
         }
 
         if (iRet != 0) return iRet;
@@ -1094,11 +1094,11 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     if (iMonsterAction < 4)
     {
         if (iRndNum == 2)
-            iRet = mutils_addToDialogBuffer ("Wilda watches as the monster splashes through the liquid. Wilda keeps her sword ready in case another monster appears.");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# watches as the monster splashes through the liquid. #!00# keeps her sword ready in case another monster appears.");
         else if (iRndNum == 0)
-            iRet = mutils_addToDialogBuffer ("As the monster scampers away, Wilda relaxes her posture, but waits to see if the monster returns.");
+            iRet = mdialog_addToDialogWithSrchRep ("As the monster scampers away, #!00# relaxes her posture, but waits to see if the monster returns.");
         else
-            iRet = mutils_addToDialogBuffer ("While watching the tentacle monster perform its retreat, Wilda keeps her sword ready.");
+            iRet = mdialog_addToDialogWithSrchRep ("While watching the tentacle monster perform its retreat, #!00# keeps her sword ready.");
         if (iRet != 0) return iRet;
 
         // pass control over to the exit scene.
@@ -1109,11 +1109,11 @@ int gamelogic04_scene1041 (int iSubSceneId, char cSubFlag)
     if (gstructActStateGlobal.sAct1Monsters < 5)
     {
         if (iRndNum == 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster is still here, and Wilda has no intention of retreating.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster is still here, and #!00# has no intention of retreating.\n\n");
         else if (iRndNum == 0)
-            iRet = mutils_addToDialogBuffer ("Wilda decides that it would be a bad idea if she should attempt to flee.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# decides that it would be a bad idea if she should attempt to flee.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Neither Wilda or the tentacle monster are going anywhere.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("Neither #!00# or the tentacle monster are going anywhere.\n\n");
         if (iRet != 0) return iRet;
     }
 
@@ -1141,7 +1141,7 @@ int gamelogic04_scene1042 (int iSubSceneId, char cSubFlag)
     // set the array to say that we had an encounter.
     gstructActStateGlobal.caEncounterArray[0] = 1;
 
-    iRet = mutils_addToDialogBuffer ("\n\n\n[1 minute later...]\n\nWilda puts her sword away.\n\n");
+    iRet = mdialog_addToDialogWithSrchRep ("\n\n\n[1 minute later...]\n\n#!00# puts her sword away.\n\n");
     if (iRet != 0) return iRet;
 
     iRet = gamelogic02_scene1020 (0, cSubFlag + 1);
@@ -1221,10 +1221,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 1:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Hit with spanking paddle, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Hit with spanking paddle, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs an improvised offensive/defensive move, by hitting the monster with her paddle then readying herself for the potential counter attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs an improvised offensive/defensive move, by hitting the monster with her paddle then readying herself for the potential counter attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -1245,10 +1245,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 2:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Hit with spanking paddle, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Hit with spanking paddle, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda hits the monster with her spanking paddle, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# hits the monster with her spanking paddle, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -1270,10 +1270,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 3:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Hit with spanking paddle, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Hit with spanking paddle, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs a basic offensive combo, by hitting the monster with her spanking paddle, then punching it with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs a basic offensive combo, by hitting the monster with her spanking paddle, then punching it with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1292,10 +1292,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 4:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Hit with spanking paddle, repeatedly\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Hit with spanking paddle, repeatedly\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda goes all out, spanking the monster with her paddle multiple times.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# goes all out, spanking the monster with her paddle multiple times.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1316,10 +1316,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 5:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kick with foot, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kick with foot, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs a weak offensive/defensive move, by kicking the monster with her rubber shoe, then readying herself for the potential counter attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs a weak offensive/defensive move, by kicking the monster with her rubber shoe, then readying herself for the potential counter attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -1340,10 +1340,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 6:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kick with foot, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kick with foot, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda kicks the monster with her shoe, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# kicks the monster with her shoe, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -1365,10 +1365,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 7:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kick with foot, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kick with foot, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda performs a weak offensive combo, by kicking the monster with her rubber shoe, then punching it with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# performs a weak offensive combo, by kicking the monster with her rubber shoe, then punching it with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1388,10 +1388,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 8:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kick with foot, repeatedly\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kick with foot, repeatedly\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda decides to kick the monster with her rubber shoes, multiple times.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# decides to kick the monster with her rubber shoes, multiple times.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1411,10 +1411,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 9:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Paddle feint attack, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Paddle feint attack, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to hit the monster with her spanking paddle, then readies herself for the potential counter attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to hit the monster with her spanking paddle, then readies herself for the potential counter attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -1433,10 +1433,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 10:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Paddle feint attack, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Paddle feint attack, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to hit the monster with her paddle, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to hit the monster with her paddle, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -1456,10 +1456,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 11:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Paddle feint attack, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Paddle feint attack, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to spank the monster with her paddle, then punches the monster with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to spank the monster with her paddle, then punches the monster with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1478,10 +1478,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 12:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Paddle feint attack, then hit with spanking paddle\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Paddle feint attack, then hit with spanking paddle\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda threatens to hit the monster with her spanking paddle, then hits it with her paddle.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# threatens to hit the monster with her spanking paddle, then hits it with her paddle.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1501,10 +1501,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 13:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Foot feint attack, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Foot feint attack, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda threatens to kick the monster with her rubber shoe, then readies herself for the potential counter attack.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# threatens to kick the monster with her rubber shoe, then readies herself for the potential counter attack.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -1523,10 +1523,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 14:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Foot feint attack, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Foot feint attack, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda threatens to the monster with her shoe, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# threatens to the monster with her shoe, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -1546,10 +1546,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 15:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Foot feint attack, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Foot feint attack, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda threatens to kick the monster with her rubber shoe, then punches the monster with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# threatens to kick the monster with her rubber shoe, then punches the monster with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1568,10 +1568,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 16:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Foot feint attack, then hit with spanking paddle\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Foot feint attack, then hit with spanking paddle\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda terrorizes to the monster with her rubber shoes, then spanks the monster with her paddle.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# terrorizes to the monster with her rubber shoes, then spanks the monster with her paddle.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1592,10 +1592,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 17:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then block\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then block\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda pretends to hesitate, then readies herself for the potential attack by the tentacle monster.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# pretends to hesitate, then readies herself for the potential attack by the tentacle monster.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 2;
@@ -1612,10 +1612,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 18:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda hesitates, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# hesitates, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDefensive = 1;
@@ -1633,10 +1633,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     case 19:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then punch with fist\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then punch with fist\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda tactically to hesitates, then punches the monster with her fist.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# tactically to hesitates, then punches the monster with her fist.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1654,10 +1654,10 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     default:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then hit with spanking paddle\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then hit with spanking paddle\n\n");
             if (iRet != 0) return iRet;
         }
-        iRet = mutils_addToDialogBuffer ("Wilda waits, then hits the monster with her spanking paddle.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# waits, then hits the monster with her spanking paddle.\n\n");
         if (iRet != 0) return iRet;
 
         // alter the monster variables according to the move settings.
@@ -1685,11 +1685,11 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     {
     case 0: // run away
         if (cDefensive == 2)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster appears to be hesitant, then it runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster appears to be hesitant, then it runs away.\n\n");
         else if (cDefensive != 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster, taking advantage of the distance Wilda has given it, takes this opportunity to run away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster, taking advantage of the distance #!00# has given it, takes this opportunity to run away.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("The tentacle monster moves slightly sideways, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster moves slightly sideways, then runs away.\n\n");
         if (iRet != 0) return iRet;
 
         break;
@@ -1699,11 +1699,11 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
         actionstate_statAddition (&gstructActStateCharWilda.structL, actionstate_randomFloatValue ((float)15, (float)9, 400), 6000);
 
         if (cDefensive == 2)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster retreats a little bit, sprays Wilda with goo, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster retreats a little bit, sprays #!00# with goo, then runs away.\n\n");
         else if (cDefensive != 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster moves closer to Wilda, sprays Wilda with goo, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster moves closer to #!00#, sprays #!00# with goo, then runs away.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("The tentacle monster runs away, while also spraying Wilda with goo.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster runs away, while also spraying #!00# with goo.\n\n");
         if (iRet != 0) return iRet;
 
         break;
@@ -1725,7 +1725,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 6), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 3.6), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster attacks Wilda it with one of its tentacles, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster attacks #!00# it with one of its tentacles, then runs away.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -1736,7 +1736,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 9), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 7.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster makes a weak attack with one of its tentacles, before running away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster makes a weak attack with one of its tentacles, before running away.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -1746,7 +1746,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 7.5), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 4.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster hits Wilda with one of its tentacles, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster hits #!00# with one of its tentacles, then runs away.\n\n");
         }
         if (iRet != 0) return iRet;
 
@@ -1757,9 +1757,9 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
         iRndNum = (int)(rand() % 2);
 
         if (iRndNum == 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster shuffles to the side, seems to hesitate, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster shuffles to the side, seems to hesitate, then runs away.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("The tentacle monster does nothing for a while, then slowly starts to move away, stops again, then it quickly runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster does nothing for a while, then slowly starts to move away, stops again, then it quickly runs away.\n\n");
         if (iRet != 0) return iRet;
 
         break;
@@ -1782,7 +1782,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 6), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 3.6), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster quickly sprays Wilda with goo, then hits her with a tentacle.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster quickly sprays #!00# with goo, then hits her with a tentacle.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -1793,7 +1793,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 9), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 7.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster sprays Wilda with goo, then performs a rather weak attack with a tentacle.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster sprays #!00# with goo, then performs a rather weak attack with a tentacle.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -1803,7 +1803,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 7.5), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 4.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster sprays Wilda with some goop, then smacks Wilda with one of its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster sprays #!00# with some goop, then smacks #!00# with one of its tentacles.\n\n");
         }
         if (iRet != 0) return iRet;
 
@@ -1825,7 +1825,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 6), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 3.6), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster waits for a while. Then quickly hits Wilda with one of its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster waits for a while. Then quickly hits #!00# with one of its tentacles.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -1835,7 +1835,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 9), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 7.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster lurches to the side, then weakly hits Wilda with one of its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster lurches to the side, then weakly hits #!00# with one of its tentacles.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -1845,7 +1845,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 7.5), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 4.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster shuffles to the side, waits, then pounds Wilda with one of its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster shuffles to the side, waits, then pounds #!00# with one of its tentacles.\n\n");
         }
         if (iRet != 0) return iRet;
 
@@ -1867,7 +1867,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 6.6), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 4.2), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster quickly slams Wilda with a tentacle, shuffles to the side, then stops.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster quickly slams #!00# with a tentacle, shuffles to the side, then stops.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -1877,7 +1877,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 9.6), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 8.1), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster weakly hits Wilda with a tentacle, then just stays there.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster weakly hits #!00# with a tentacle, then just stays there.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -1887,7 +1887,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 8.1), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 5.1), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster pummels Wilda with a tentacle, then does nothing.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster pummels #!00# with a tentacle, then does nothing.\n\n");
         }
         if (iRet != 0) return iRet;
 
@@ -1909,7 +1909,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 6), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 3.6), 0);
 
-            iRet = mutils_addToDialogBuffer ("Wilda is hit twice in a row, by attacking tentacles from the tentacle monster.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# is hit twice in a row, by attacking tentacles from the tentacle monster.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -1919,7 +1919,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 9), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 7.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster attacks Wilda, rather weakly, with two hits from its tentacles.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster attacks #!00#, rather weakly, with two hits from its tentacles.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -1929,7 +1929,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 7.5), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 4.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("Wilda receives two quick and heavy hits from the tentacle monster.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# receives two quick and heavy hits from the tentacle monster.\n\n");
         }
         if (iRet != 0) return iRet;
 
@@ -1951,7 +1951,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 6), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 3.6), 0);
 
-            iRet = mutils_addToDialogBuffer ("Wilda is pummeled by a barrage of tentacle attacks.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# is pummeled by a barrage of tentacle attacks.\n\n");
         }
         // the impacts are different if the PC is further back from the monster.
         else if (cDefensive != 0)
@@ -1961,7 +1961,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 9), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 7.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("Wilda receives a weak pummeling from the tentacle monster.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# receives a weak pummeling from the tentacle monster.\n\n");
         }
         // the PC is near the monster and NOT defensive.
         else
@@ -1971,7 +1971,7 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structB, (float)(fStaDec / 7.5), 0);
             actionstate_statSubtraction (&gstructActStateCharWilda.structC, (float)(fStaDec / 4.5), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster rains a series of tentacle strikes down on Wilda.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster rains a series of tentacle strikes down on #!00#.\n\n");
         }
         if (iRet != 0) return iRet;
 
@@ -1983,11 +1983,11 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     if (iMonsterAction < 4)
     {
         if (iRndNum == 2)
-            iRet = mutils_addToDialogBuffer ("As Wilda watches as the monster scampers away through the liquid, she keeps her paddle ready.");
+            iRet = mdialog_addToDialogWithSrchRep ("As #!00# watches as the monster scampers away through the liquid, she keeps her paddle ready.");
         else if (iRndNum == 0)
-            iRet = mutils_addToDialogBuffer ("As the monster continues to make its retreat, Wilda waits to see if it decides to return.");
+            iRet = mdialog_addToDialogWithSrchRep ("As the monster continues to make its retreat, #!00# waits to see if it decides to return.");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda keeps her spanking paddle ready, in case another tentacle monster decides to show up.");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# keeps her spanking paddle ready, in case another tentacle monster decides to show up.");
         if (iRet != 0) return iRet;
 
         // pass control over to the exit scene.
@@ -1998,11 +1998,11 @@ int gamelogic04_scene1051 (int iSubSceneId, char cSubFlag)
     if (gstructActStateGlobal.sAct2Monsters < 5)
     {
         if (iRndNum == 0)
-            iRet = mutils_addToDialogBuffer ("Neither the tentacle monster or Wilda are showing any signs of retreating.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("Neither the tentacle monster or #!00# are showing any signs of retreating.\n\n");
         else if (iRndNum == 0)
-            iRet = mutils_addToDialogBuffer ("Wilda decides that she is not going to show her back to this opponent.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# decides that she is not going to show her back to this opponent.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda and the tentacle monster are still facing each other.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# and the tentacle monster are still facing each other.\n\n");
         if (iRet != 0) return iRet;
     }
 
@@ -2030,7 +2030,7 @@ int gamelogic04_scene1052 (int iSubSceneId, char cSubFlag)
     // set the array to say that we had an encounter.
     gstructActStateGlobal.caEncounterArray[0] = 1;
 
-    iRet = mutils_addToDialogBuffer ("\n\n\n[1 minute later...]\n\nWilda decides to put her paddle away.\n\n");
+    iRet = mdialog_addToDialogWithSrchRep ("\n\n\n[1 minute later...]\n\n#!00# decides to put her paddle away.\n\n");
     if (iRet != 0) return iRet;
 
     iRet = gamelogic02_scene1020 (0, cSubFlag + 1);
@@ -2224,11 +2224,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 1:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Massage breasts, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Massage breasts, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
 
-        iRet = mutils_addToDialogBuffer ("Wilda lightly massages her breasts, then pulls back, giving the tentacle monster some more space.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# lightly massages her breasts, then pulls back, giving the tentacle monster some more space.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have a description for this action already, don't work with the action values below.
@@ -2246,7 +2246,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 2:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Massage breasts, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Massage breasts, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2263,18 +2263,18 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 3:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Massage breasts repeatedly\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Massage breasts repeatedly\n\n");
             if (iRet != 0) return iRet;
         }
 
         iRndNum = (int)(rand() % 3);
 
         if (iRndNum == 2)
-            iRet = mutils_addToDialogBuffer ("Wilda spends some time throughly massaging her breasts, occasionally shifting from her breasts to her nipples and back again.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# spends some time throughly massaging her breasts, occasionally shifting from her breasts to her nipples and back again.\n\n");
         else if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("Wilda massages her breasts over and over again, pausing a couple of times to play with her nipples.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# massages her breasts over and over again, pausing a couple of times to play with her nipples.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda massages her breasts then switches to rubbing them together as if she is giving the tentacle monster a tit-fuck. She then lightly drools into the crevice between them.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# massages her breasts then switches to rubbing them together as if she is giving the tentacle monster a tit-fuck. She then lightly drools into the crevice between them.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have a description for this action already, don't work with the action values below.
@@ -2292,7 +2292,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 4:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Massage breasts, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Massage breasts, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2309,7 +2309,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 5:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Massage breasts, then wiggle butt\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Massage breasts, then wiggle butt\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2326,7 +2326,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 6:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Massage breasts, then ask Crystal to join in\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Massage breasts, then ask #!03# to join in\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2343,7 +2343,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 7:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kneel down, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kneel down, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2360,7 +2360,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 8:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kneel down, then massage breasts\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kneel down, then massage breasts\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2377,7 +2377,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 9:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kneel down, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kneel down, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2394,7 +2394,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 10:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kneel down, then wiggle butt\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kneel down, then wiggle butt\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2411,7 +2411,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 11:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Kneel down, then ask Crystal to join in\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Kneel down, then ask #!03# to join in\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2428,11 +2428,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 12:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Wiggle butt, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Wiggle butt, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
 
-        iRet = mutils_addToDialogBuffer ("Wilda lightly shakes her butt at the tentacle monster, then steps away, increasing her distance from the the monster.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# lightly shakes her butt at the tentacle monster, then steps away, increasing her distance from the the monster.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have a description for this action already, don't work with the action values below.
@@ -2450,7 +2450,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 13:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Wiggle butt, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Wiggle butt, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2467,7 +2467,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 14:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Wiggle butt, then massage breasts\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Wiggle butt, then massage breasts\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2484,7 +2484,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 15:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Wiggle butt, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Wiggle butt, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2501,18 +2501,18 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 16:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Wiggle butt repeatedly\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Wiggle butt repeatedly\n\n");
             if (iRet != 0) return iRet;
         }
 
         iRndNum = (int)(rand() % 3);
 
         if (iRndNum == 2)
-            iRet = mutils_addToDialogBuffer ("Wilda turns around, so her butt is facing the tentacle monster, then gyrates her hips over and over again.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# turns around, so her butt is facing the tentacle monster, then gyrates her hips over and over again.\n\n");
         else if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("Wilda spends a bit of time swaying her hips from side to side, while turning around so that the tentacle monster can get a better view of her ass, then she lightly rocks her butt back and forth.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# spends a bit of time swaying her hips from side to side, while turning around so that the tentacle monster can get a better view of her ass, then she lightly rocks her butt back and forth.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda spins around then spends some time bucking her hips up and down as if she is riding a horse... or the tentacle of a tentacle monster.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# spins around then spends some time bucking her hips up and down as if she is riding a horse... or the tentacle of a tentacle monster.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have a description for this action already, don't work with the action values below.
@@ -2530,7 +2530,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 17:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Wiggle butt, then ask Crystal to join in\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Wiggle butt, then ask #!03# to join in\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2547,11 +2547,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 18:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
 
-        iRet = mutils_addToDialogBuffer ("Wilda fingers her pussy for a little bit, then moves away from the tentacle monster.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# fingers her pussy for a little bit, then moves away from the tentacle monster.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have a description for this action already, don't work with the action values below.
@@ -2570,7 +2570,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 19:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2588,7 +2588,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 20:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy, then massage breasts\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy, then massage breasts\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2606,7 +2606,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 21:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2624,7 +2624,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 22:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy, then wiggle butt\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy, then wiggle butt\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2642,7 +2642,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 23:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy, then ask Crystal to join in\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy, then ask #!03# to join in\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2660,11 +2660,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 24:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then pull back\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then pull back\n\n");
             if (iRet != 0) return iRet;
         }
 
-        iRet = mutils_addToDialogBuffer ("Wilda waits, then pulls back, allowing the monster a better chance to escape.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# waits, then pulls back, allowing the monster a better chance to escape.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have a description for this action already, don't work with the action values below.
@@ -2682,7 +2682,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 25:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2699,7 +2699,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 26:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then massage breasts\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then massage breasts\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2716,7 +2716,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     case 27:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2733,7 +2733,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     default:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Do nothing, then wiggle butt\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Do nothing, then wiggle butt\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -2762,11 +2762,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 2)
-                iRet = mutils_addToDialogBuffer ("Wilda waits for a while, to tease the tentacle monster.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# waits for a while, to tease the tentacle monster.");
             else if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("Wilda pauses for a while, watching as the tentacle monster starts to become a little bit more interested.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# pauses for a while, watching as the tentacle monster starts to become a little bit more interested.");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda waits as the tentacle monster starts to show some more excitement.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# waits as the tentacle monster starts to show some more excitement.");
 
             break;
 
@@ -2774,11 +2774,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 2)
-                iRet = mutils_addToDialogBuffer ("Wilda plays with her breasts for a while.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# plays with her breasts for a while.");
             else if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("Wilda rubs her breasts, then plays with her nipples for a little while.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# rubs her breasts, then plays with her nipples for a little while.");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda fondles her own breasts while looking at the tentacle monster.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# fondles her own breasts while looking at the tentacle monster.");
 
             break;
 
@@ -2786,11 +2786,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 2)
-                iRet = mutils_addToDialogBuffer ("Wilda looks at the tentacle monster, then parts her legs slightly and kneels down in the liquid.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at the tentacle monster, then parts her legs slightly and kneels down in the liquid.");
             else if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("While the tentacle monster observes Wilda, she sinks down into the liquid and parts her legs.");
+                iRet = mdialog_addToDialogWithSrchRep ("While the tentacle monster observes #!00#, she sinks down into the liquid and parts her legs.");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda slowly sinks to her knees, into the liquid, in front of the tentacle monster.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# slowly sinks to her knees, into the liquid, in front of the tentacle monster.");
 
             break;
 
@@ -2798,11 +2798,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 2)
-                iRet = mutils_addToDialogBuffer ("Wilda starts to circle her finger around her clitoris a couple of times before shoving 3 fingers inside her pussy.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# starts to circle her finger around her clitoris a couple of times before shoving 3 fingers inside her pussy.");
             else if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("While the tentacle monster watches, Wilda starts playing with her pussy lips, inserts two fingers and pries her pussy open.");
+                iRet = mdialog_addToDialogWithSrchRep ("While the tentacle monster watches, #!00# starts playing with her pussy lips, inserts two fingers and pries her pussy open.");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda inserts a finger into her pussy a few of times, adding an extra finger every second thrust.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# inserts a finger into her pussy a few of times, adding an extra finger every second thrust.");
 
             break;
 
@@ -2810,17 +2810,17 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 2)
-                iRet = mutils_addToDialogBuffer ("Wilda lightly gyrates her hips, before switching to shaking her butt up and down.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# lightly gyrates her hips, before switching to shaking her butt up and down.");
             else if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("Wilda gyrates her butt in a clockwise motion a couple of times, before switching to anti-clockwise for a couple more.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# gyrates her butt in a clockwise motion a couple of times, before switching to anti-clockwise for a couple more.");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda parts her legs a little bit and shakes her butt from side to side.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# parts her legs a little bit and shakes her butt from side to side.");
 
             break;
         }
         if (iRet != 0) return iRet;
 
-        iRet = mutils_addToDialogBuffer (" Then, ");
+        iRet = mdialog_addToDialogWithSrchRep (" Then, ");
         if (iRet != 0) return iRet;
 
         switch (cAction2)
@@ -2831,11 +2831,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 2)
-                iRet = mutils_addToDialogBuffer ("Wilda switches to massaging her own breasts, and playing with her nipples.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# switches to massaging her own breasts, and playing with her nipples.\n\n");
             else if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("Wilda starts playing with her nipples, circling them with her fingers, before finishing up by rubbing her breasts together.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# starts playing with her nipples, circling them with her fingers, before finishing up by rubbing her breasts together.\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda changes over to massaging and rubbing her breasts.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# changes over to massaging and rubbing her breasts.\n\n");
 
             break;
 
@@ -2843,11 +2843,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 2)
-                iRet = mutils_addToDialogBuffer ("Wilda puckers up her lips and blows a kiss at the tentacle monster.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# puckers up her lips and blows a kiss at the tentacle monster.\n\n");
             else if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("Wilda starts to sensuously suck on her right index finger, and pulls it out of her mouth while also blowing a kiss, causing a string of spittle to fly off the end of her index finger.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# starts to sensuously suck on her right index finger, and pulls it out of her mouth while also blowing a kiss, causing a string of spittle to fly off the end of her index finger.\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda licks her lips, twirls her tongue around inside her mouth, and finishes up with blowing a kiss at the tentacle monster.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# licks her lips, twirls her tongue around inside her mouth, and finishes up with blowing a kiss at the tentacle monster.\n\n");
 
             break;
 
@@ -2855,11 +2855,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 2)
-                iRet = mutils_addToDialogBuffer ("Wilda switches to lightly fingering her clitoris, before lightly pinching it and letting out a low moan.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# switches to lightly fingering her clitoris, before lightly pinching it and letting out a low moan.\n\n");
             else if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("Wilda starts to rub her clitoris up and down, then side to side, before pinching her clitoris while lightly bucking her hips.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# starts to rub her clitoris up and down, then side to side, before pinching her clitoris while lightly bucking her hips.\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda changes to repeatedly switching between fingering her clitoris and pinching it, a couple of times.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# changes to repeatedly switching between fingering her clitoris and pinching it, a couple of times.\n\n");
 
             break;
 
@@ -2867,11 +2867,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 2)
-                iRet = mutils_addToDialogBuffer ("Wilda starts to lightly rub both of her hands all over both of her ass cheeks.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# starts to lightly rub both of her hands all over both of her ass cheeks.\n\n");
             else if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("Wilda shifts to make a light rocking motion with her ass, escalating to shaking her butt up and down.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# shifts to make a light rocking motion with her ass, escalating to shaking her butt up and down.\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda switches to gyrating her hips around and around.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# switches to gyrating her hips around and around.\n\n");
 
             break;
 
@@ -2883,19 +2883,19 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             switch (iRndNum)
             {
             case 0:
-                iRet = mutils_addToDialogBuffer ("Wilda then looks over at Crystal and asks \"Want to join in?\"\n\nCrystal responds \"I thought you would never ask\".");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# then looks over at #!03# and asks \"Want to join in?\"\n\n#!03# responds \"I thought you would never ask\".");
                 break;
 
             case 1:
-                iRet = mutils_addToDialogBuffer ("Wilda then glances at Crystal and notices that she is fidgeting. Wilda asks Crystal \"I guess I could use a hand here\".\n\nCrystal licks her lips and replies \"You look like you need some assistance\".");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# then glances at #!03# and notices that she is fidgeting. #!00# asks #!03# \"I guess I could use a hand here\".\n\n#!03# licks her lips and replies \"You look like you need some assistance\".");
                 break;
 
             case 2:
-                iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal, who is observing Wilda's lewd display and starts to ask \"Would you\"...\n\nCrystal just replies \"Yes\".");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03#, who is observing #!00#'s lewd display and starts to ask \"Would you\"...\n\n#!03# just replies \"Yes\".");
                 break;
 
             default:
-                iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal with a deviant smile and motions for Crystal to come over with her right index finger.\n\nCrystal\'s smile gets bigger and she nods her head.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03# with a deviant smile and motions for #!03# to come over with her right index finger.\n\n#!03#\'s smile gets bigger and she nods her head.");
                 break;
             }
             if (iRet != 0) return iRet;
@@ -2908,31 +2908,31 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
                 iRndNum = (int)(rand() % 2);
 
                 if (iRndNum == 0)
-                    iRet = mutils_addToDialogBuffer (" Crystal then saunters over to Wilda and joins in massaging her breasts.\n\n");
+                    iRet = mdialog_addToDialogWithSrchRep (" #!03# then saunters over to #!00# and joins in massaging her breasts.\n\n");
                 else
-                    iRet = mutils_addToDialogBuffer (" Crystal then walks over behind Wilda and starts groping Wilda\'s breasts.\n\n");
+                    iRet = mdialog_addToDialogWithSrchRep (" #!03# then walks over behind #!00# and starts groping #!00#\'s breasts.\n\n");
                 break;
 
             case 2: // action 1 = 2 (kneel down)
-                iRet = mutils_addToDialogBuffer (" Crystal then walks over next to Wilda and kneels down next to her.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep (" #!03# then walks over next to #!00# and kneels down next to her.\n\n");
                 break;
 
             case 3: // action 1 = 3 (finger pussy)
                 iRndNum = (int)(rand() % 2);
 
                 if (iRndNum == 0)
-                    iRet = mutils_addToDialogBuffer (" Crystal moves over next to Wilda, and starts fingering her own pussy as well.\n\n");
+                    iRet = mdialog_addToDialogWithSrchRep (" #!03# moves over next to #!00#, and starts fingering her own pussy as well.\n\n");
                 else
-                    iRet = mutils_addToDialogBuffer (" Crystal then walks behind Wilda, and starts fingering Wilda's pussy while standing behind Wilda.\n\n");
+                    iRet = mdialog_addToDialogWithSrchRep (" #!03# then walks behind #!00#, and starts fingering #!00#'s pussy while standing behind #!00#.\n\n");
                 break;
 
             case 4: // action 1 = 4 (wiggle butt)
                 iRndNum = (int)(rand() % 2);
 
                 if (iRndNum == 0)
-                    iRet = mutils_addToDialogBuffer (" Crystal saunters over next to Wilda, and joins in with the ass shaking.\n\n");
+                    iRet = mdialog_addToDialogWithSrchRep (" #!03# saunters over next to #!00#, and joins in with the ass shaking.\n\n");
                 else
-                    iRet = mutils_addToDialogBuffer (" Crystal then walks over next to Wilda, and then starts groping Wilda\'s butt.\n\n");
+                    iRet = mdialog_addToDialogWithSrchRep (" #!03# then walks over next to #!00#, and then starts groping #!00#\'s butt.\n\n");
                 break;
             }
 
@@ -2945,16 +2945,16 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
     if ((cAction2 == 5) && ((iMonsterAction == 0) || (iMonsterAction == 1)))
     {
         if (iMonsterAction == 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster just runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster just runs away.\n\n");
         else
         {
             actionstate_statAddition (&gstructActStateCharWilda.structL, actionstate_randomFloatValue ((float)15, (float)9, 400), gstructActStateCharWilda.structF.iNum);
             actionstate_statAddition (&gstructActStateCharCrystal.structL, actionstate_randomFloatValue ((float)10, (float)4, 400), gstructActStateCharCrystal.structF.iNum);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster quickly sprays Wilda and Crystal with goo, then runs away.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster quickly sprays #!00# and #!03# with goo, then runs away.\n\n");
         }
 
-        iRet = mutils_addToDialogBuffer ("Wilda and Crystal watch as the tentacle monster scampers away, splashing liquid everywhere. Crystal looks at Wilda and asks \"What were you doing?\"\n\nWilda looks at Crystal, and only muster \"That was... a defensive action... maybe\"...\n\nCrystal breathes in, then tells Wilda \"You mustn't back down... Don\'t do that again\"...\n\nWilda responds \"Okay\"...\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# watch as the tentacle monster scampers away, splashing liquid everywhere. #!03# looks at #!00# and asks \"What were you doing?\"\n\n#!00# looks at #!03#, and only muster \"That was... a defensive action... maybe\"...\n\n#!03# breathes in, then tells #!00# \"You mustn't back down... Don\'t do that again\"...\n\n#!00# responds \"Okay\"...\n\n");
         if (iRet != 0) return iRet;
 
         actionstate_statAddition (&gstructActStateCharWilda.structK, actionstate_randomFloatValue ((float)3, (float)1, 100), 6000);
@@ -2982,34 +2982,34 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
         switch (iRndNum)
         {
         case 0:
-            iRet = mutils_addToDialogBuffer ("The tentacle monster moves towards Wilda");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster moves towards #!00#");
             break;
 
         case 1:
-            iRet = mutils_addToDialogBuffer ("The tentacle monster excitedly advances towards Wilda");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster excitedly advances towards #!00#");
             break;
 
         case 2:
-            iRet = mutils_addToDialogBuffer ("The tentacle monster slowly approaches Wilda");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster slowly approaches #!00#");
             break;
 
         default:
-            iRet = mutils_addToDialogBuffer ("The tentacle monster erratically moves towards Wilda");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster erratically moves towards #!00#");
             break;
         }
         if (iRet != 0) return iRet;
 
         if (cAction2 == 6)
-            iRet = mutils_addToDialogBuffer (" and Crystal.\n\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (" and #!03#.\n\n\n");
         else
-            iRet = mutils_addToDialogBuffer (".\n\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (".\n\n\n");
         if (iRet != 0) return iRet;
     }
 
     switch (iMonsterAction)
     {
     case 0: // just run away
-        iRet = mutils_addToDialogBuffer ("The tentacle monster just runs away.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster just runs away.\n\n");
         if (iRet != 0) return iRet;
 
         // set the array to say that we didn't have an encounter.
@@ -3018,12 +3018,12 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
         break;
 
     case 1: // spray goo and run away
-        iRet = mutils_addToDialogBuffer ("The tentacle monster sprays Wilda and Crystal with goo, then runs away.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster sprays #!00# and #!03# with goo, then runs away.\n\n");
         if (iRet != 0) return iRet;
 
         if (gstructActStateGlobal.sAct3Monsters < 4)
         {
-            iRet = mutils_addToDialogBuffer ("As the tentacle monster makes its hasty retreat, Crystal looks at Wilda \"Sometimes our masters can be a bit timid, but don\'t worry about it\"...\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("As the tentacle monster makes its hasty retreat, #!03# looks at #!00# \"Sometimes our masters can be a bit timid, but don\'t worry about it\"...\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3046,9 +3046,9 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
         fLusDec = (float)(fStaDec / 11);
 
         if (fStaDec > (float)1)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         // if crystal is involved, then the stats are spread across Wilda and Crystal
@@ -3072,7 +3072,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharCrystal.structF, (float)(fFriDec * 0.6), 24);
             actionstate_statSubtraction (&gstructActStateCharCrystal.structL, (float)(fLusDec * 0.6), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster finishes violating Crystal and Wilda's pussies, pulls its tentacles out them, and moves away from both women.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes violating #!03# and #!00#'s pussies, pulls its tentacles out them, and moves away from both women.\n\n");
             if (iRet != 0) return iRet;
         }
         // otherwise, it is just Wilda
@@ -3086,7 +3086,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structF, fFriDec, 24);
             actionstate_statSubtraction (&gstructActStateCharWilda.structL, fLusDec, 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster finishes violating Wilda's pussy, pulls its tentacle out of her, and moves away from Wilda.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes violating #!00#'s pussy, pulls its tentacle out of her, and moves away from #!00#.\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3105,9 +3105,9 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
         fLusDec = (float)(fStaDec / 11);
 
         if (fStaDec > (float)0.9)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         // if crystal is involved, then the stats are spread across Wilda and Crystal
@@ -3131,7 +3131,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharCrystal.structF, (float)(fFriDec * 0.3), 24);
             actionstate_statSubtraction (&gstructActStateCharCrystal.structL, (float)(fLusDec * 0.6), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster finishes violating Crystal and Wilda's mouthes, pulls its tentacles out of their throats, and moves away from both women.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes violating #!03# and #!00#'s mouthes, pulls its tentacles out of their throats, and moves away from both women.\n\n");
             if (iRet != 0) return iRet;
         }
         // otherwise, it is just Wilda
@@ -3145,7 +3145,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharWilda.structF, fFriDec, 24);
             actionstate_statSubtraction (&gstructActStateCharWilda.structL, fLusDec, 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster finishes violating Wilda's mouth, pulls its tentacle out of Wilda, and moves away from her.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes violating #!00#'s mouth, pulls its tentacle out of #!00#, and moves away from her.\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3165,9 +3165,9 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
         fLusDec = (float)(fStaDec / 16);
 
         if (fStaDec > (float)1.45)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         // if crystal is involved, then the stats are spread across Wilda and Crystal
@@ -3193,7 +3193,7 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             actionstate_statSubtraction (&gstructActStateCharCrystal.structF, (float)(fFriDec * 0.3), 24);
             actionstate_statSubtraction (&gstructActStateCharCrystal.structL, (float)(fLusDec * 0.6), 0);
 
-            iRet = mutils_addToDialogBuffer ("The tentacle monster finishes violating Crystal and Wilda's pussies and mouthes, then pulls its tentacles out of them, and moves away from both women.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes violating #!03# and #!00#'s pussies and mouthes, then pulls its tentacles out of them, and moves away from both women.\n\n");
             if (iRet != 0) return iRet;
         }
         // otherwise, it is just Wilda
@@ -3211,9 +3211,9 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum == 0)
-                iRet = mutils_addToDialogBuffer ("The tentacle monster finishes violating Wilda's mouth and pussy, removes its tentacles from of her, and moves away from Wilda.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes violating #!00#'s mouth and pussy, removes its tentacles from of her, and moves away from #!00#.\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("The tentacle monster finishes violating Wilda's pussy and mouth, pulls its tentacles out of Wilda, and moves away from her.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes violating #!00#'s pussy and mouth, pulls its tentacles out of #!00#, and moves away from her.\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3233,9 +3233,9 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
         fLusDec = (float)(fStaDec / 100);
 
         if (fStaDec > (float)9)
-            iRet = mutils_addToDialogBuffer ("[11 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[11 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[10 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[10 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         // if crystal is involved, then the stats are spread across Wilda and Crystal
@@ -3264,9 +3264,9 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum == 0)
-                iRet = mutils_addToDialogBuffer ("After a reasonable fuck-fest, the tentacle monster stops raping the mouthes and pussies of both Wilda and Crystal, pulls its tentacles out of the women, and moves away from both of them.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("After a reasonable fuck-fest, the tentacle monster stops raping the mouthes and pussies of both #!00# and #!03#, pulls its tentacles out of the women, and moves away from both of them.\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("The tentacle monster finishes its fuck session with the mouthes and pussies of Crystal and Wilda, sets both of the women down, pulls out its tentacles and moves away from the pair of them.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes its fuck session with the mouthes and pussies of #!03# and #!00#, sets both of the women down, pulls out its tentacles and moves away from the pair of them.\n\n");
             if (iRet != 0) return iRet;
         }
         // otherwise, it is just Wilda
@@ -3284,11 +3284,11 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 1)
-                iRet = mutils_addToDialogBuffer ("The tentacle monster finishes up with Wilda\'s pussy and mouth, pulls its tentacles out of her, sets her down and starts to stagger away from her.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes up with #!00#\'s pussy and mouth, pulls its tentacles out of her, sets her down and starts to stagger away from her.\n\n");
             else if (iRndNum == 0)
-                iRet = mutils_addToDialogBuffer ("Wilda finally is finally set down by the tentacle monster after it had finished with her mouth and pussy. The tentacles retreat from Wilda, and then the monster itself starts to shamble away through the liquid.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# finally is finally set down by the tentacle monster after it had finished with her mouth and pussy. The tentacles retreat from #!00#, and then the monster itself starts to shamble away through the liquid.\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda's mouth and pussy are finally vacated by the tentacles, as the tentacle monster sets her down and starts to move away from her.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00#'s mouth and pussy are finally vacated by the tentacles, as the tentacle monster sets her down and starts to move away from her.\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3307,54 +3307,54 @@ int gamelogic04_scene1061 (int iSubSceneId, char cSubFlag)
             if (iRndNum == 0)
             {
                 if (iMonsterAction == 1)
-                    iRet = mutils_addToDialogBuffer ("Wilda watches as the monster starts to retreat quickly, then looks at Crystal. Crystal's smile is slightly larger.");
+                    iRet = mdialog_addToDialogWithSrchRep ("#!00# watches as the monster starts to retreat quickly, then looks at #!03#. #!03#'s smile is slightly larger.");
                 else
-                    iRet = mutils_addToDialogBuffer ("Wilda watches as the monster starts to scamper away from Wilda and Crystal. Wilda then looks at Crystal to see that Crystal's smile is slightly larger than before, as goop slowly leaks out of Crystal's mouth.");
+                    iRet = mdialog_addToDialogWithSrchRep ("#!00# watches as the monster starts to scamper away from #!00# and #!03#. #!00# then looks at #!03# to see that #!03#'s smile is slightly larger than before, as goop slowly leaks out of #!03#'s mouth.");
             }
             else
             {
-                iRet = mutils_addToDialogBuffer ("Wilda then watches as the tentacle monster starts to move away from Crystal and her quickly.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# then watches as the tentacle monster starts to move away from #!03# and her quickly.");
             }
 
             if (iRet != 0) return iRet;
 
             if (iMonsterAction == 5)
-                iRet = mutils_addToDialogBuffer ("\n\n\n[2 minutes later...]\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("\n\n\n[2 minutes later...]\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("\n\n\n[1 minute later...]\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("\n\n\n[1 minute later...]\n\n");
 
             if (iRet != 0) return iRet;
 
-            iRet = mutils_addToDialogBuffer ("Wilda and Crystal finally recover enough to continue.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# finally recover enough to continue.\n\n");
         }
         else
         {
             iRndNum = (int)(rand() % 3);
 
             if (iRndNum == 1)
-                iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal, who just continues stare and smile at the tentacle monster, while still fingering herself. Wilda is then distracted by the tentacle monster as it speeds up its departure from the two women.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03#, who just continues stare and smile at the tentacle monster, while still fingering herself. #!00# is then distracted by the tentacle monster as it speeds up its departure from the two women.");
             else if (iRndNum == 0)
-                iRet = mutils_addToDialogBuffer ("Wilda then staggers to remain standing as the tentacle monster starts to increase its speed and run away from the two women.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# then staggers to remain standing as the tentacle monster starts to increase its speed and run away from the two women.");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda considers following the tentacle monster, to have more fun with it, when the tentacle monster starts to retreat from the two women faster.");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# considers following the tentacle monster, to have more fun with it, when the tentacle monster starts to retreat from the two women faster.");
 
             if (iRet != 0) return iRet;
 
             if (iMonsterAction == 5)
-                iRet = mutils_addToDialogBuffer ("\n\n\n[2 minutes later...]\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("\n\n\n[2 minutes later...]\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("\n\n\n[1 minute later...]\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("\n\n\n[1 minute later...]\n\n");
 
             if (iRet != 0) return iRet;
 
             iRndNum = (int)(rand() % 4);
 
             if (iRndNum == 1)
-                iRet = mutils_addToDialogBuffer ("Crystal looks at Wilda and asks \"Are you okay?\"\n\nWilda responds \"Yes... We should get going\".\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!03# looks at #!00# and asks \"Are you okay?\"\n\n#!00# responds \"Yes... We should get going\".\n\n");
             else if (iRndNum == 0)
-                iRet = mutils_addToDialogBuffer ("Wilda takes a deep breath, stands up and tells Crystal \"We should continue\".\n\nCrystal, without looking at Wilda, and still masturbating, responds \"Yes, we should... for everything is according to the will of our lord and master... Cock\".\n\nCrystal stops talking and looks at Wilda. Wilda replies \"Okay then\"...\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# takes a deep breath, stands up and tells #!03# \"We should continue\".\n\n#!03#, without looking at #!00#, and still masturbating, responds \"Yes, we should... for everything is according to the will of our lord and master... Cock\".\n\n#!03# stops talking and looks at #!00#. #!00# replies \"Okay then\"...\n\n");
             else
-                iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal, who is still masturbating, and tells Crystal \"I should be good to go\".\n\nCrystal just looks at Wilda and nods.\n\n");
+                iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03#, who is still masturbating, and tells #!03# \"I should be good to go\".\n\n#!03# just looks at #!00# and nods.\n\n");
         }
         if (iRet != 0) return iRet;
     }
@@ -3385,7 +3385,7 @@ int gamelogic04_scene1063 (int iSubSceneId, char cSubFlag)
 
     if (cSubFlag == 0)
     {
-        iRet = mutils_addToDialogBuffer (">Ask Crystal what to do\n\n");
+        iRet = mdialog_addToDialogWithSrchRep (">Ask #!03# what to do\n\n");
         if (iRet != 0) return iRet;
     }
 
@@ -3458,7 +3458,7 @@ int gamelogic04_scene1063 (int iSubSceneId, char cSubFlag)
             // to have reached this point, means that the PC already knows all of the potential moves.. time to turn Crystal's involvement off.
             gstructActStateGlobal.caAct3UnlockArray[7] = 0;
 
-            iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal \"Is there\"...\n\nCrystal quietly interjects \"You are more than capable of handling this yourself\", then continues masturbating.\n\nWilda considers the fact that Crystal does not want to provide anymore assistance, and responds \"Oh... Okay\". Wilda then looks at the tentacle monster again.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03# \"Is there\"...\n\n#!03# quietly interjects \"You are more than capable of handling this yourself\", then continues masturbating.\n\n#!00# considers the fact that #!03# does not want to provide anymore assistance, and responds \"Oh... Okay\". #!00# then looks at the tentacle monster again.\n\n");
             if (iRet != 0) return iRet;
 
             // wrap back around to the combat setup, but with a subscene id of 1, so that the "Ask Crystal what to do" option is no longer there.
@@ -3470,32 +3470,32 @@ int gamelogic04_scene1063 (int iSubSceneId, char cSubFlag)
     switch (iCount)
     {
     case 1:
-        iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal \"I am not exactly sure what I should be doing here... I mean\"...\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03# \"I am not exactly sure what I should be doing here... I mean\"...\n\n");
         if (iRet != 0) return iRet;
         break;
 
     case 2:
-        iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal \"Sorry to ask for your help, but I feel I should be doing something... differently\".\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03# \"Sorry to ask for your help, but I feel I should be doing something... differently\".\n\n");
         if (iRet != 0) return iRet;
         break;
 
     case 3:
-        iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal \"How should I handle this one?\"\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03# \"How should I handle this one?\"\n\n");
         if (iRet != 0) return iRet;
         break;
 
     case 4:
-        iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal \"Anymore ideas would be appreciated\".\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03# \"Anymore ideas would be appreciated\".\n\n");
         if (iRet != 0) return iRet;
         break;
 
     case 5:
-        iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal \"Teacher, could you graciously provide this student with more of your knowledge\".\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03# \"Teacher, could you graciously provide this student with more of your knowledge\".\n\n");
         if (iRet != 0) return iRet;
         break;
 
     case 6:
-        iRet = mutils_addToDialogBuffer ("Wilda looks at Crystal \"Do you have anymore\"...\n\nCrystal quietly interjects, while not looking at Wilda \"There is one more thing I can tell you\", then continues masturbating by herself for about half a minute.\n\nThat pause felt like an eternity to Wilda.\n\nEventually, ");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at #!03# \"Do you have anymore\"...\n\n#!03# quietly interjects, while not looking at #!00# \"There is one more thing I can tell you\", then continues masturbating by herself for about half a minute.\n\nThat pause felt like an eternity to #!00#.\n\nEventually, ");
         if (iRet != 0) return iRet;
         break;
     }
@@ -3503,42 +3503,42 @@ int gamelogic04_scene1063 (int iSubSceneId, char cSubFlag)
     switch (iOffset)
     {
     case 1: // massage breasts
-        iRet = mutils_addToDialogBuffer ("Crystal looks at Wilda and says \"Play your cow udders\", then makes quickly demonstrates massaging her own breasts with her hands..\n\nWilda looks back at the tentacle monster \"Okay... Sure\"...\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!03# looks at #!00# and says \"Play your cow udders\", then makes quickly demonstrates massaging her own breasts with her hands..\n\n#!00# looks back at the tentacle monster \"Okay... Sure\"...\n\n");
         if (iRet != 0) return iRet;
 
         gstructActStateGlobal.caAct3UnlockArray[1] = 1;
         break;
 
     case 2: // blow a kiss
-        iRet = mutils_addToDialogBuffer ("Crystal looks at Wilda and says \"Tease with your mouth\".\n\nWilda asks \"Tease?\"\n\nCrystal puckers up, and blows a kiss.\n\nWilda looks back at the tentacle monster, as she was expecting Crystal to do something like suck on her finger, but a kiss she can do.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!03# looks at #!00# and says \"Tease with your mouth\".\n\n#!00# asks \"Tease?\"\n\n#!03# puckers up, and blows a kiss.\n\n#!00# looks back at the tentacle monster, as she was expecting #!03# to do something like suck on her finger, but a kiss she can do.\n\n");
         if (iRet != 0) return iRet;
 
         gstructActStateGlobal.caAct3UnlockArray[2] = 1;
         break;
 
     case 3: // pinch clitoris
-        iRet = mutils_addToDialogBuffer ("Crystal looks at Wilda and says \"Play with your girl cock\".\n\nWilda responds with a dumbfounded \"Eh?\"\n\nCrystal sighs and tells Wilda \"Look at what I am about to do with my girl cock\". Wilda looks down at Crystal\'s pussy, and Crystal switches from fingering her clitoris, to pinching it. Crystal continues \"Like that\".\n\nWilda looks back at the tentacle monster, and smiles \"I should be able to manage that\".\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!03# looks at #!00# and says \"Play with your girl cock\".\n\n#!00# responds with a dumbfounded \"Eh?\"\n\n#!03# sighs and tells #!00# \"Look at what I am about to do with my girl cock\". #!00# looks down at #!03#\'s pussy, and #!03# switches from fingering her clitoris, to pinching it. #!03# continues \"Like that\".\n\n#!00# looks back at the tentacle monster, and smiles \"I should be able to manage that\".\n\n");
         if (iRet != 0) return iRet;
 
         gstructActStateGlobal.caAct3UnlockArray[3] = 1;
         break;
 
     case 4: // wiggle butt
-        iRet = mutils_addToDialogBuffer ("Crystal looks at Wilda and says \"Shake your booty\".\n\nWilda asks \"Booty?\"\n\nCrystal then gyrates her hips, and responds \"Like this\".\n\nWilda looks back at the tentacle monster, and says \"Shake my booty, sure... I could do that\".\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!03# looks at #!00# and says \"Shake your booty\".\n\n#!00# asks \"Booty?\"\n\n#!03# then gyrates her hips, and responds \"Like this\".\n\n#!00# looks back at the tentacle monster, and says \"Shake my booty, sure... I could do that\".\n\n");
         if (iRet != 0) return iRet;
 
         gstructActStateGlobal.caAct3UnlockArray[4] = 1;
         break;
 
     case 5: // finger pussy
-        iRet = mutils_addToDialogBuffer ("Crystal looks at Wilda and says \"Ready your lower orifice\".\n\nWilda looks at Crystal, and tries to make sense of what she means.\n\nCrystal adds \"Observe... my cunny\". Wilda looks down and watches as Crystal switches from fingering her clitoris to sliding her fingers in and out of her pussy.\n\nWilda responds \"Oh... Like that\", looks back at the tentacle monster, and continues \"That I can do\".\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!03# looks at #!00# and says \"Ready your lower orifice\".\n\n#!00# looks at #!03#, and tries to make sense of what she means.\n\n#!03# adds \"Observe... my cunny\". #!00# looks down and watches as #!03# switches from fingering her clitoris to sliding her fingers in and out of her pussy.\n\n#!00# responds \"Oh... Like that\", looks back at the tentacle monster, and continues \"That I can do\".\n\n");
         if (iRet != 0) return iRet;
 
         gstructActStateGlobal.caAct3UnlockArray[5] = 1;
         break;
 
     default: // 6, kneel down
-        iRet = mutils_addToDialogBuffer ("Crystal looks at Wilda and says \"Prostrate yourself before your Master\".\n\nWilda asks \"Prostrate?\"\n\nCrystal continues \"On your knees\".\n\nWilda looks back at the tentacle monster, and considers that she should be kneeling before it.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!03# looks at #!00# and says \"Prostrate yourself before your Master\".\n\n#!00# asks \"Prostrate?\"\n\n#!03# continues \"On your knees\".\n\n#!00# looks back at the tentacle monster, and considers that she should be kneeling before it.\n\n");
         if (iRet != 0) return iRet;
 
         gstructActStateGlobal.caAct3UnlockArray[6] = 1;
@@ -3699,7 +3699,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 1:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Play with nipples, then do nothing\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Play with nipples, then do nothing\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3716,7 +3716,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 2:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Play with nipples, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Play with nipples, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3733,18 +3733,18 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 3:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Play with nipples, then pinch them\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Play with nipples, then pinch them\n\n");
             if (iRet != 0) return iRet;
         }
 
         iRndNum = (int)(rand() % 3);
 
         if (iRndNum == 2)
-            iRet = mutils_addToDialogBuffer ("Wilda starts by teasing the tips of her own nipples, moving to lightly massaging her breasts, then switching back to tweaking her nipples.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# starts by teasing the tips of her own nipples, moving to lightly massaging her breasts, then switching back to tweaking her nipples.\n\n");
         else if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("Wilda starts with rubbing both of her nipples up and down, raising her arousal, then lets out a light moan as she lightly pinches both of her nipples.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# starts with rubbing both of her nipples up and down, raising her arousal, then lets out a light moan as she lightly pinches both of her nipples.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("While looking at the tentacle monster, Wilda starts with lightly tweaking and rubbing her nipples, then switches to tweaking and pinching them.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("While looking at the tentacle monster, #!00# starts with lightly tweaking and rubbing her nipples, then switches to tweaking and pinching them.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have already set a description here..
@@ -3761,7 +3761,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 4:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Play with nipples, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Play with nipples, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3778,7 +3778,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 5:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Play with nipples, then wiggle butt\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Play with nipples, then wiggle butt\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3795,7 +3795,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 6:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spread legs, then do nothing\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spread legs, then do nothing\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3812,7 +3812,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 7:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spread legs, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spread legs, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3829,7 +3829,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 8:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spread legs, then pinch nipples\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spread legs, then pinch nipples\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3846,18 +3846,18 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 9:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spread legs, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spread legs, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
         iRndNum = (int)(rand() % 3);
 
         if (iRndNum == 2)
-            iRet = mutils_addToDialogBuffer ("Wilda steps out with her right leg, and starts rubbing and pinching her clitoris while lightly rocking her butt back and forth.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# steps out with her right leg, and starts rubbing and pinching her clitoris while lightly rocking her butt back and forth.\n\n");
         else if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("Wilda steps out with her left leg, and starts tweaking and playing her clitoris as she lightly moans.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# steps out with her left leg, and starts tweaking and playing her clitoris as she lightly moans.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda looks at the tentacle monster, as she half steps out with her left foot, then half steps out with her right foot, squats a little bit, then starts lightly toying with her own clitoris.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# looks at the tentacle monster, as she half steps out with her left foot, then half steps out with her right foot, squats a little bit, then starts lightly toying with her own clitoris.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have already set a description here..
@@ -3874,7 +3874,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 10:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spread legs, then wiggle butt\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spread legs, then wiggle butt\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3891,7 +3891,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 11:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spank own butt, then do nothing\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spank own butt, then do nothing\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3908,7 +3908,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 12:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spank own butt, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spank own butt, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3925,7 +3925,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 13:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spank own butt, then pinch nipples\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spank own butt, then pinch nipples\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3942,7 +3942,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 14:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spank own butt, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spank own butt, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -3959,18 +3959,18 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 15:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Spank own butt, then wiggle it\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Spank own butt, then wiggle it\n\n");
             if (iRet != 0) return iRet;
         }
 
         iRndNum = (int)(rand() % 3);
 
         if (iRndNum == 2)
-            iRet = mutils_addToDialogBuffer ("Wilda spins around, showing her anus to the tentacle monster, bends over, spanks her ass, then starts shaking her butt.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# spins around, showing her anus to the tentacle monster, bends over, spanks her ass, then starts shaking her butt.\n\n");
         else if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("Wilda turns to the side, bends over, starts groping and lightly spanking her own butt, then gyrates her hips.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# turns to the side, bends over, starts groping and lightly spanking her own butt, then gyrates her hips.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda alternates between spanking her butt and shaking it up and down.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# alternates between spanking her butt and shaking it up and down.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have already set a description here..
@@ -3987,7 +3987,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 16:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy and anus, then do nothing\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy and anus, then do nothing\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4006,7 +4006,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 17:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy and anus, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy and anus, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4025,7 +4025,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 18:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy and anus, then pinch nipples\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy and anus, then pinch nipples\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4044,7 +4044,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 19:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy and anus, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy and anus, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4063,7 +4063,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 20:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Finger pussy and anus, then wiggle butt\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Finger pussy and anus, then wiggle butt\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4082,7 +4082,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 21:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Stroke clitoris, then do nothing\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Stroke clitoris, then do nothing\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4099,7 +4099,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 22:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Stroke clitoris, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Stroke clitoris, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4116,7 +4116,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 23:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Stroke clitoris, then pinch nipples\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Stroke clitoris, then pinch nipples\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4133,18 +4133,18 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 24:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Stroke clitoris, then pinch it\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Stroke clitoris, then pinch it\n\n");
             if (iRet != 0) return iRet;
         }
 
         iRndNum = (int)(rand() % 3);
 
         if (iRndNum == 2)
-            iRet = mutils_addToDialogBuffer ("Wilda starts by lightly parting her legs, stroking her clitoris, then lightly pinching it.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# starts by lightly parting her legs, stroking her clitoris, then lightly pinching it.\n\n");
         else if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("While looking at the tentacle monster, Wilda increases the her petting of her own clitoris, to the point that she is erratically rubbing it, then lightly pinches it. Light moans escape Wilda\'s mouth.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("While looking at the tentacle monster, #!00# increases the her petting of her own clitoris, to the point that she is erratically rubbing it, then lightly pinches it. Light moans escape #!00#\'s mouth.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda alternates between rubbing, tweaking, and lightly pinching her clitoris.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# alternates between rubbing, tweaking, and lightly pinching her clitoris.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have already set a description here..
@@ -4161,7 +4161,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 25:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Stroke clitoris, then wiggle butt\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Stroke clitoris, then wiggle butt\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4178,7 +4178,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 26:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Lick lips, then do nothing\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Lick lips, then do nothing\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4195,18 +4195,18 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 27:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Lick lips, then blow kiss\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Lick lips, then blow kiss\n\n");
             if (iRet != 0) return iRet;
         }
 
         iRndNum = (int)(rand() % 3);
 
         if (iRndNum == 2)
-            iRet = mutils_addToDialogBuffer ("While looking directly at the tentacle monster, starts to lick her lips, then starts erotically sucking on her index finger, then switches to blowing a kiss.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("While looking directly at the tentacle monster, starts to lick her lips, then starts erotically sucking on her index finger, then switches to blowing a kiss.\n\n");
         else if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("Wilda puckers up her lips, starts licking them, pretends that she is sucking a tentacle with her lips and tongue, then finishes up by blowing a kiss.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# puckers up her lips, starts licking them, pretends that she is sucking a tentacle with her lips and tongue, then finishes up by blowing a kiss.\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda bites her lower lip then starts licking along her top lip, then blows a sloppy kiss in the direction of the tentacle monster.\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# bites her lower lip then starts licking along her top lip, then blows a sloppy kiss in the direction of the tentacle monster.\n\n");
         if (iRet != 0) return iRet;
 
         cDesc = 1; // we have already set a description here..
@@ -4223,7 +4223,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 28:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Lick lips, then pinch nipples\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Lick lips, then pinch nipples\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4240,7 +4240,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     case 29:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Lick lips, then pinch clitoris\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Lick lips, then pinch clitoris\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4257,7 +4257,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     default:
         if (cSubFlag == 0)
         {
-            iRet = mutils_addToDialogBuffer (">Lick lips, then wiggle butt\n\n");
+            iRet = mdialog_addToDialogWithSrchRep (">Lick lips, then wiggle butt\n\n");
             if (iRet != 0) return iRet;
         }
 
@@ -4280,7 +4280,7 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
         // Note: I decided to do the random evaluation inside each case evaluation, in case I decide to expand the number
         //  of RNG possibilities for the dialog.
 
-        iRet = mutils_addToDialogBuffer ("Wilda starts with ");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# starts with ");
         if (iRet != 0) return iRet;
 
         switch (cAction1)
@@ -4289,9 +4289,9 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("stroking the tips of her nipples");
+                iRet = mdialog_addToDialogWithSrchRep ("stroking the tips of her nipples");
             else
-                iRet = mutils_addToDialogBuffer ("playing with her nipples");
+                iRet = mdialog_addToDialogWithSrchRep ("playing with her nipples");
 
             break;
 
@@ -4299,9 +4299,9 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("spreading her legs");
+                iRet = mdialog_addToDialogWithSrchRep ("spreading her legs");
             else
-                iRet = mutils_addToDialogBuffer ("sliding her legs apart");
+                iRet = mdialog_addToDialogWithSrchRep ("sliding her legs apart");
 
             break;
 
@@ -4309,9 +4309,9 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("massaging and spanking her own ass");
+                iRet = mdialog_addToDialogWithSrchRep ("massaging and spanking her own ass");
             else
-                iRet = mutils_addToDialogBuffer ("lightly spanking her own butt");
+                iRet = mdialog_addToDialogWithSrchRep ("lightly spanking her own butt");
 
             break;
 
@@ -4319,9 +4319,9 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("lightly fingering her pussy with her left hand, while reaching around to her anus with her right hand");
+                iRet = mdialog_addToDialogWithSrchRep ("lightly fingering her pussy with her left hand, while reaching around to her anus with her right hand");
             else
-                iRet = mutils_addToDialogBuffer ("fingering her pussy with her left hand, while fingering her anus with her right hand at the same time");
+                iRet = mdialog_addToDialogWithSrchRep ("fingering her pussy with her left hand, while fingering her anus with her right hand at the same time");
 
             break;
 
@@ -4329,9 +4329,9 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("lightly stroking her erect clitoris");
+                iRet = mdialog_addToDialogWithSrchRep ("lightly stroking her erect clitoris");
             else
-                iRet = mutils_addToDialogBuffer ("playing with her erect clitoris");
+                iRet = mdialog_addToDialogWithSrchRep ("playing with her erect clitoris");
 
             break;
 
@@ -4339,14 +4339,14 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("seductively licking her lips with her tongue");
+                iRet = mdialog_addToDialogWithSrchRep ("seductively licking her lips with her tongue");
             else
-                iRet = mutils_addToDialogBuffer ("pursing her lips and licking her lips");
+                iRet = mdialog_addToDialogWithSrchRep ("pursing her lips and licking her lips");
             break;
         }
         if (iRet != 0) return iRet;
 
-        iRet = mutils_addToDialogBuffer (", then ");
+        iRet = mdialog_addToDialogWithSrchRep (", then ");
         if (iRet != 0) return iRet;
 
         switch (cAction2)
@@ -4355,9 +4355,9 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("does nothing else, to tease the tentacle monster");
+                iRet = mdialog_addToDialogWithSrchRep ("does nothing else, to tease the tentacle monster");
             else
-                iRet = mutils_addToDialogBuffer ("pauses, to further excite the tentacle monster");
+                iRet = mdialog_addToDialogWithSrchRep ("pauses, to further excite the tentacle monster");
 
             break;
 
@@ -4365,9 +4365,9 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("puckering her lips and blowing a kiss at the tentacle monster");
+                iRet = mdialog_addToDialogWithSrchRep ("puckering her lips and blowing a kiss at the tentacle monster");
             else
-                iRet = mutils_addToDialogBuffer ("blowing a kiss towards the tentacle monster");
+                iRet = mdialog_addToDialogWithSrchRep ("blowing a kiss towards the tentacle monster");
 
             break;
 
@@ -4375,9 +4375,9 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("lightly pinching both of her nipples");
+                iRet = mdialog_addToDialogWithSrchRep ("lightly pinching both of her nipples");
             else
-                iRet = mutils_addToDialogBuffer ("circling and pinching her nipples with her fingers");
+                iRet = mdialog_addToDialogWithSrchRep ("circling and pinching her nipples with her fingers");
 
             break;
 
@@ -4385,9 +4385,9 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("lightly pinching her clitoris");
+                iRet = mdialog_addToDialogWithSrchRep ("lightly pinching her clitoris");
             else
-                iRet = mutils_addToDialogBuffer ("rubbing her clitoris, and then pinching it");
+                iRet = mdialog_addToDialogWithSrchRep ("rubbing her clitoris, and then pinching it");
 
             break;
 
@@ -4395,19 +4395,19 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
             iRndNum = (int)(rand() % 2);
 
             if (iRndNum != 0)
-                iRet = mutils_addToDialogBuffer ("she faces her butt at the tentacle monster and starts gyrating her hips");
+                iRet = mdialog_addToDialogWithSrchRep ("she faces her butt at the tentacle monster and starts gyrating her hips");
             else
-                iRet = mutils_addToDialogBuffer ("she starts shaking her butt up and down, then around");
+                iRet = mdialog_addToDialogWithSrchRep ("she starts shaking her butt up and down, then around");
 
             break;
         }
         if (iRet != 0) return iRet;
 
-        iRet = mutils_addToDialogBuffer (".\n\n");
+        iRet = mdialog_addToDialogWithSrchRep (".\n\n");
         if (iRet != 0) return iRet;
     }
 
-    iRet = mutils_addToDialogBuffer ("\n");
+    iRet = mdialog_addToDialogWithSrchRep ("\n");
     if (iRet != 0) return iRet;
 
     switch (iMonsterAction)
@@ -4425,17 +4425,17 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
         actionstate_statSubtraction (&gstructActStateCharWilda.structL, (float)(fStaDec / 10), 1);
 
         if (fStaDec > (float)1.18)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         iRndNum = (int)(rand() % 2);
 
         if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster finally pulls its tentacle out of Wilda\'s pussy, leaving rivers of goop dribbling down between her thighs.");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finally pulls its tentacle out of #!00#\'s pussy, leaving rivers of goop dribbling down between her thighs.");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda has been enjoying the attention her pussy alone has had from the tentacle monster for a while now. She is rather unhappy when the tentacle monster finally pulls its tentacle out of her.");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# has been enjoying the attention her pussy alone has had from the tentacle monster for a while now. She is rather unhappy when the tentacle monster finally pulls its tentacle out of her.");
         if (iRet != 0) return iRet;
 
         break;
@@ -4453,17 +4453,17 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
         actionstate_statSubtraction (&gstructActStateCharWilda.structL, (float)(fStaDec / 10), 1);
 
         if (fStaDec > (float)1.2)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         iRndNum = (int)(rand() % 2);
 
         if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster, satisfied with Wilda\'s oral skills, pulls its tentacle out of her mouth.");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster, satisfied with #!00#\'s oral skills, pulls its tentacle out of her mouth.");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda has been throughly sucking on the tentacle that the tentacle monster thrusting in and out of Wilda\'s mouth. Suddenly the tentacle decides that it has had enough so it pulls its tentacle out of Wilda.");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# has been throughly sucking on the tentacle that the tentacle monster thrusting in and out of #!00#\'s mouth. Suddenly the tentacle decides that it has had enough so it pulls its tentacle out of #!00#.");
         if (iRet != 0) return iRet;
 
         break;
@@ -4481,17 +4481,17 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
         actionstate_statSubtraction (&gstructActStateCharWilda.structL, (float)(fStaDec / 10), 1);
 
         if (fStaDec > (float)1.25)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         iRndNum = (int)(rand() % 2);
 
         if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("After Wilda\'s anus had been throughly explored by a tentacle from the tentacle monster, the tentacle pulls out of her, much to Wilda\'s disapproval.");
+            iRet = mdialog_addToDialogWithSrchRep ("After #!00#\'s anus had been throughly explored by a tentacle from the tentacle monster, the tentacle pulls out of her, much to #!00#\'s disapproval.");
         else
-            iRet = mutils_addToDialogBuffer ("The tentacle monster has been concentrating on fucking only Wilda\'s butt for a while. Finally, the tentacle monster pulls its tentacle out of Wilda.");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster has been concentrating on fucking only #!00#\'s butt for a while. Finally, the tentacle monster pulls its tentacle out of #!00#.");
         if (iRet != 0) return iRet;
 
         break;
@@ -4510,17 +4510,17 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
         actionstate_statSubtraction (&gstructActStateCharWilda.structL, (float)(fStaDec / 10.5), 1);
 
         if (fStaDec > (float)1.37)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         iRndNum = (int)(rand() % 2);
 
         if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("After accommodating tentacles in her pussy and mouth for a little while now, Wilda finds that the tentacle monster removes both of those tentacles from her.");
+            iRet = mdialog_addToDialogWithSrchRep ("After accommodating tentacles in her pussy and mouth for a little while now, #!00# finds that the tentacle monster removes both of those tentacles from her.");
         else
-            iRet = mutils_addToDialogBuffer ("Wilda has been spending some time sucking on a tentacle that is thrusting in and out of her mouth, while another has been pistoning in and out of her pussy. The tentacles shake a little bit, then finally retract from her.");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# has been spending some time sucking on a tentacle that is thrusting in and out of her mouth, while another has been pistoning in and out of her pussy. The tentacles shake a little bit, then finally retract from her.");
         if (iRet != 0) return iRet;
 
         break;
@@ -4539,17 +4539,17 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
         actionstate_statSubtraction (&gstructActStateCharWilda.structL, (float)(fStaDec / 11), 1);
 
         if (fStaDec > (float)1.42)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         iRndNum = (int)(rand() % 2);
 
         if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("Wilda has has had her pussy, and her anus, penetrated by two separate tentacles, at the same time. The tentacle monster has been alternate thrusting in and out of Wilda\'s pussy and anus. Finally, the tentacle monster pulls out both of its tentacles.");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# has has had her pussy, and her anus, penetrated by two separate tentacles, at the same time. The tentacle monster has been alternate thrusting in and out of #!00#\'s pussy and anus. Finally, the tentacle monster pulls out both of its tentacles.");
         else
-            iRet = mutils_addToDialogBuffer ("Both of Wilda\'s lower orifices have been accommodating some rather lively tentacles from the tentacle monster. The tentacle suddenly stops humping Wilda\'s pussy and butt, and pulls its tentacles out of her.");
+            iRet = mdialog_addToDialogWithSrchRep ("Both of #!00#\'s lower orifices have been accommodating some rather lively tentacles from the tentacle monster. The tentacle suddenly stops humping #!00#\'s pussy and butt, and pulls its tentacles out of her.");
         if (iRet != 0) return iRet;
 
         break;
@@ -4568,17 +4568,17 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
         actionstate_statSubtraction (&gstructActStateCharWilda.structL, (float)(fStaDec / 11), 1);
 
         if (fStaDec > (float)1.57)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         iRndNum = (int)(rand() % 2);
 
         if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("Wilda has been skewered by the tentacles fucking both her mouth, and her anus, at the same time. Finally, the tentacle monster helps Wilda back onto her feet, and pulls its tentacles out of her.");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# has been skewered by the tentacles fucking both her mouth, and her anus, at the same time. Finally, the tentacle monster helps #!00# back onto her feet, and pulls its tentacles out of her.");
         else
-            iRet = mutils_addToDialogBuffer ("For a little while now, Wilda has been sucking on a tentacle in her mouth, while another has been exploring her rectum. The tentacle monster stops fucking Wilda\'s mouth and anus, and pulls its tentacles out of her.");
+            iRet = mdialog_addToDialogWithSrchRep ("For a little while now, #!00# has been sucking on a tentacle in her mouth, while another has been exploring her rectum. The tentacle monster stops fucking #!00#\'s mouth and anus, and pulls its tentacles out of her.");
         if (iRet != 0) return iRet;
 
         break;
@@ -4598,19 +4598,19 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
         actionstate_statSubtraction (&gstructActStateCharWilda.structL, (float)(fStaDec / 12), 1);
 
         if (fStaDec > (float)1.87)
-            iRet = mutils_addToDialogBuffer ("[4 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[4 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[3 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[3 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         iRndNum = (int)(rand() % 3);
 
         if (iRndNum == 1)
-            iRet = mutils_addToDialogBuffer ("The tentacle monster has been busy for a little while, fucking Wilda\'s mouth, pussy and anus. The tentacle monster holds Wilda up, as it pulls its three tentacles out of her.");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster has been busy for a little while, fucking #!00#\'s mouth, pussy and anus. The tentacle monster holds #!00# up, as it pulls its three tentacles out of her.");
         else if (iRndNum != 0)
-            iRet = mutils_addToDialogBuffer ("Wilda\'s pussy, butt and mouth have all been getting some recent attention from the tentacle monster. Suddenly, the tentacle monster pulls its tentacles out of Wilda at the same time.");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00#\'s pussy, butt and mouth have all been getting some recent attention from the tentacle monster. Suddenly, the tentacle monster pulls its tentacles out of #!00# at the same time.");
         else
-            iRet = mutils_addToDialogBuffer ("After having her pussy and ass fucked, while also sucking a third tentacle for a while, Wilda finds that the tentacle monster starts pulling its tentacles out of her.");
+            iRet = mdialog_addToDialogWithSrchRep ("After having her pussy and ass fucked, while also sucking a third tentacle for a while, #!00# finds that the tentacle monster starts pulling its tentacles out of her.");
         if (iRet != 0) return iRet;
 
         break;
@@ -4630,19 +4630,19 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
         actionstate_statSubtraction (&gstructActStateCharWilda.structL, (float)(fStaDec / 40), 1);
 
         if (fStaDec > (float)15)
-            iRet = mutils_addToDialogBuffer ("[11 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[11 minutes later...]\n\n");
         else
-            iRet = mutils_addToDialogBuffer ("[10 minutes later...]\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("[10 minutes later...]\n\n");
         if (iRet != 0) return iRet;
 
         iRndNum = (int)(rand() % 3);
 
         if (iRndNum == 1)
-            iRet = mutils_addToDialogBuffer ("After throughly fucking Wilda\'s mouth, pussy and anus, the tentacle monster sets Wilda down, and pulls its tentacles out of her.");
+            iRet = mdialog_addToDialogWithSrchRep ("After throughly fucking #!00#\'s mouth, pussy and anus, the tentacle monster sets #!00# down, and pulls its tentacles out of her.");
         else if (iRndNum == 0)
-            iRet = mutils_addToDialogBuffer ("After a enduring an extended violation of her 3 primary orifices, Wilda finds that her mouth, pussy and anus are now vacant, and has been set down by her tentacled lover.");
+            iRet = mdialog_addToDialogWithSrchRep ("After a enduring an extended violation of her 3 primary orifices, #!00# finds that her mouth, pussy and anus are now vacant, and has been set down by her tentacled lover.");
         else
-            iRet = mutils_addToDialogBuffer ("The tentacle monster finishes up giving Wilda\'s anus, pussy and mouth some rather through attention, and retracts its tentacles from her.");
+            iRet = mdialog_addToDialogWithSrchRep ("The tentacle monster finishes up giving #!00#\'s anus, pussy and mouth some rather through attention, and retracts its tentacles from her.");
         if (iRet != 0) return iRet;
 
         break;
@@ -4651,27 +4651,27 @@ int gamelogic04_scene1071 (int iSubSceneId, char cSubFlag)
     iRndNum = (int)(rand() % 3);
 
     if (iRndNum == 1)
-        iRet = mutils_addToDialogBuffer (" The tentacle monster then leaves Wilda, and starts scampering off down a passageway.");
+        iRet = mdialog_addToDialogWithSrchRep (" The tentacle monster then leaves #!00#, and starts scampering off down a passageway.");
     else if (iRndNum == 0)
-        iRet = mutils_addToDialogBuffer (" The tentacle monster departs, and leaves Wilda to recover by herself.");
+        iRet = mdialog_addToDialogWithSrchRep (" The tentacle monster departs, and leaves #!00# to recover by herself.");
     else
-        iRet = mutils_addToDialogBuffer (" The tentacle monster splashes some liquid, as it rushes away from Wilda.");
+        iRet = mdialog_addToDialogWithSrchRep (" The tentacle monster splashes some liquid, as it rushes away from #!00#.");
     if (iRet != 0) return iRet;
 
     if (iMonsterAction == 7)
-        iRet = mutils_addToDialogBuffer ("\n\n\n[2 minutes later...]\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("\n\n\n[2 minutes later...]\n\n");
     else
-        iRet = mutils_addToDialogBuffer ("\n\n\n[1 minute later...]\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("\n\n\n[1 minute later...]\n\n");
     if (iRet != 0) return iRet;
 
     iRndNum = (int)(rand() % 3);
 
     if (iRndNum == 1)
-        iRet = mutils_addToDialogBuffer ("Wilda talks to herself \"I guess it is about time I got going\".\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# talks to herself \"I guess it is about time I got going\".\n\n");
     else if (iRndNum == 0)
-        iRet = mutils_addToDialogBuffer ("Wilda decides that she has had enough rest and it is time to start moving again.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("#!00# decides that she has had enough rest and it is time to start moving again.\n\n");
     else
-        iRet = mutils_addToDialogBuffer ("After waiting for a while, and finding that the tentacle monster didn\'t return, Wilda decides that it is about time to keep going. Wilda still has her quest to complete.\n\n");
+        iRet = mdialog_addToDialogWithSrchRep ("After waiting for a while, and finding that the tentacle monster didn\'t return, #!00# decides that it is about time to keep going. #!00# still has her quest to complete.\n\n");
     if (iRet != 0) return iRet;
 
     // increment the counter
