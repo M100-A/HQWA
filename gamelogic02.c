@@ -112,6 +112,9 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
     if (cSubFlag > MAXGAMESCENENESTS)
         return 101;
 
+    // for some reason this flag keeps being set to non-zero, so I am resetting it here.
+    gstructActStateOpponent.cActive = 0;
+
     if (gcDebugFlag != 0)
     {
         char szWorking[80];
@@ -138,7 +141,7 @@ int gamelogic02_scene1020 (int iSubSceneId, char cSubFlag)
             break;
 
         case 3:
-            iRet = mdialog_addToDialogWithSrchRep ("#!00# collapses in the hallway, due to exhaustion \"I am just... too tired\"...\n\n#!03# stands over #!00# \"Do you want to get some rest for a while?\"\n\n#!00# groggily responds \"Yes, thank you\".\n\n#!03# replies \"Rest... And I will watch over you\".\n\n#!00# closes her eyes.\n\n#!03# continues \"Yes... Rest... For in the realm of our lord and master... Cock... even failure is rewarded\"...\n\n");
+            iRet = mdialog_addToDialogWithSrchRep ("#!00# collapses in the hallway, due to exhaustion \"I am just... too tired\"...\n\n#!03# stands over #!00# \"Do you want to get some rest for a while?\"\n\n#!00# groggily responds \"Yes, thank you\".\n\n#!03# replies \"Rest... and I will watch over you\".\n\n#!00# closes her eyes.\n\n#!03# continues \"Yes... Rest... For in the realm of our lord and master... Cock... even failure is rewarded\"...\n\n");
             if (iRet != 0) return iRet;
             break;
 
@@ -1317,7 +1320,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                         else if (iRndNum != 0)
                             iRet = mdialog_addToDialogWithSrchRep ("#!00# and #!03# arrive at the end of a pathway, when a tentacle monster rises up out of the liquid in front of #!00#. #!00# smiles, as she is ready.\n\n");
                         else
-                            iRet = mdialog_addToDialogWithSrchRep ("After arriving at the end of a pathway, a tentacle monster appears. #!03# steps back, giving both #!00# and the tentacle monster space.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("After arriving at the end of a pathway, a tentacle monster appears. #!03# steps back, giving both #!00# and the tentacle monster some space.\n\n");
                         if (iRet != 0) return iRet;
 
                         // setup our monster parameters
@@ -1356,7 +1359,7 @@ int gamelogic02_scene1021 (int iSubSceneId, char cSubFlag)
                         else if (iRndNum != 0)
                             iRet = mdialog_addToDialogWithSrchRep ("When #!00# arrives at the end of a pathway, she is greeted by a tentacle monster that drops from the ceiling. #!00# licks her lips in anticipation as she approaches it.\n\n");
                         else
-                            iRet = mdialog_addToDialogWithSrchRep ("As she is walking along a pathway, #!00# hears something moving behind her. #!00# decides to keep walking to the end of the pathway, and allow her stalker to catch up. #!00# did not have to wait long for the tentacle monster to arrive.\n\n");
+                            iRet = mdialog_addToDialogWithSrchRep ("As she is walking along a pathway, #!00# hears something moving behind her. #!00# decides to keep walking to the end of the pathway, and then allow her stalker to catch up. #!00# did not have to wait long for the tentacle monster to arrive.\n\n");
                         if (iRet != 0) return iRet;
 
                         // setup our monster parameters

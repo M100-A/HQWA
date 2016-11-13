@@ -26,7 +26,7 @@ int gamelogic00_scene0000 (int iSubSceneId, char cSubFlag)
     if (cSubFlag > MAXGAMESCENENESTS)
         return 101;
 
-    iRet = mutils_addToDialogBuffer (">Main Menu\n\nHedonism Quest, Wilda\'s Ascension (HQWA). Version 0.70\n\nLicense:CC BY 4.0 (type \"credits\" and press \"Enter\" to see more)\n\nThis text game has heavy adult and sexual content and is not meant for minors. At bare minimum, you should be above the \"age of consent\" to play this game. If you don\'t know what \"age of consent\" is, then exit now.\n\nTo exit this game.. Type \"exit\" and press the \"Enter\" key, or hold down the \"Ctrl\" key and press the \"Q\" key.\n\nIf you want help about the interface, or detail about other keyboard shortcuts, type \"help\" below and press the \"Enter\" key.\n\n");
+    iRet = mutils_addToDialogBuffer (">Main Menu\n\nHedonism Quest, Wilda\'s Ascension (HQWA). Version 0.71\n\nLicense:CC BY 4.0 (type \"credits\" and press \"Enter\" to see more)\n\nThis text game has heavy adult and sexual content and is not meant for minors. At bare minimum, you should be above the \"age of consent\" to play this game. If you don\'t know what \"age of consent\" is, then exit now.\n\nTo exit this game.. Type \"exit\" and press the \"Enter\" key, or hold down the \"Ctrl\" key and press the \"Q\" key.\n\nIf you want help about the interface, or detail about other keyboard shortcuts, type \"help\" below and press the \"Enter\" key.\n\n");
     if (iRet != 0) return iRet;
 
     if (gcClearToStartFlag == 1)
