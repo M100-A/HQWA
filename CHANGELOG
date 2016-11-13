@@ -1,4 +1,18 @@
 
+# Version 0.71 - Sunday 13th November 2016
+
+Some more dialog fixes. These were minor, but I decided to perform the review again anyway.
+
+Resolved an issue that showed up for only the CGI-BIN version, where it wasn't possible to restore a save at the end of the game. This wasn't a problem for the CURSES version (that I know of).
+
+The CGI-BIN menu (menucgi.c) now has a spoilers page.
+As a result, I have added a SPOILERS document as part of this CURSES package.
+
+I have added the CGI-BIN conversion directory to this release (a habit that I started with the last release of BMPS).
+
+Note: I did not make the CGI-BIN version cross platform capable.
+
+
 # Version 0.70 - Tuesday 1st November 2016
 
 Note: 0.60 saves will not work with 0.70. The game will not load the older save files.

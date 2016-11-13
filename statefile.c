@@ -1348,6 +1348,7 @@ int statefile_loadSaveFile (char *pszFileName)
         if (strcmp (szInputString, "=5") != 0)
             return 1;
 
+        // do not forget to set the active flag
         gstructActStateOpponent.cActive = 1;
 
         if (futils_readLineFromMemoryNoEndLineCombo (&gstruct_FileBuffGen, szInputString, 48) != 0)
@@ -1386,7 +1387,17 @@ int statefile_loadSaveFile (char *pszFileName)
         gstructActStateOpponent.iHitPoints = (int)atoi (szInputString);
     }
     else
+    {
+        // clear the active flag
         gstructActStateOpponent.cActive = 0;
+
+        // and make sure all of the other values are 0.
+        gstructActStateOpponent.iRage = 0;
+        gstructActStateOpponent.iFear = 0;
+        gstructActStateOpponent.iConfidence = 0;
+        gstructActStateOpponent.iDesire = 0;
+        gstructActStateOpponent.iHitPoints = 0;
+    }
 
 #ifdef INTERFACE_CURSES
     attron(A_DIM);

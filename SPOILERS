@@ -1,0 +1,34 @@
+There be storyline spoilers here...
+
+The purpose of this document is to provide some hints for Hedonism Quest, Wilda's Ascension (HQWA). This was created after a 4chan/d /dgg/ query about how to move around, so I decided it would be better for everyone that this detail visible to everyone (plus some more). Primarily because the thread that I posted the comments in is going to be archived and will disappear.
+
+If you don't want to ruin the experience for yourself, then stop viewing this document now. The information below contains spoilers about the storyline.
+
+If you get lost inside the dungeon (and that isn't hard, if you are not used to navigating using "description" alone) the maps for the all 3 variants of the dungeon can be found over in the releases location for the HQWA github repository (it is a zip file you can download).
+
+Map set 1 is for easy mode, Map set 2 is for medium mode and Map set 3 is for hard mode. In easy mode, there is a comment when you are at a location where there is a blockage. In medium and hard modes there are no such comments. The replaced maps don't just change the layout, they increase the likelihood of running into monsters at specific locations.
+
+What the maps show is that there are "blockages". What they do not show are the positions on the map where the PC has to go to "unlock the blockages". To get past some blockages, you might need to unblock another blockage first. If you want to know exactly where the "hot locations" are on the map to unlock the blockages, look at the source code, specifically at the mapdata.c listing. The comments on the map id positions give away that there are events at those positions. The ones with a "Clk" value set to something other than 0, are the positions that control the "blockages".
+
+Letting your Stamina hit 0 means a game over. With each monster encounter, your Endurance increases (which defines the maximum amount of Stamina). Your Endurance also increases naturally when you transition between storyline parts. Your Stamina decreases as you walk around the dungeon, so wondering around aimlessly will eventually lead to your demise. Letting your Stamina decrease and your lust rise can result in the PC being less effective during monster combat.
+
+Your equipment becomes less effective the more you use it. Effectiveness is useful for both combat and appearing to be aggressive.
+
+In regards to fighting monsters. The only "fight to the death" is the first monster encounter. After that, all of the "random" monster encounters during Part 1 and Part 2 (up to meeting Crystal and Daisy) the monsters will tend to run away. With that first battle, the PC is going to have to go "all out" because that first monster will NOT run away. During subsequent battles, the PC can be more defensive.
+
+From Part 3 and onwards it is straight sex with the monsters. Traveling with Crystal is important. If you want to preserve your own Stamina, you need to invite her to participate in the monster sex, decreasing your own Stamina hit as a result (60%). You can ask Crystal for her guidance, but once you ask her too much, that is it, you won't ask for her help anymore (meaning you are going to be facing monsters alone as well).
+
+You are on your own in Part 4, but there are no pathway blockages. The game story reaches its conclusion at the end of Part 4.
+
+Only during Part 1 do you have "Stamina Elixirs" in your inventory. You cannot swap over inventory items past Part 1 either. The only use of "Inventory and status" beyond Part 1 is to look at your stats.
+
+
+Cheat/Debug mode:
+
+The CURSES version has this via the -D command line switch. The readmen file already covers it.
+
+Within HQWA, the debug/cheat mode turns on debug statements that constantly tell you what map and position you are at. It also tells you about the evaluation for a random monster encounter, and the stats of that monster when the encounter starts. Monsters bail-out of combat early because of their high level of fear. Your actions affect your karma levels, so it gives you an unfair advantage to predict what the monster is about to do, and increase your karma stats as a result.
+
+You are welcome.
+
+M100
